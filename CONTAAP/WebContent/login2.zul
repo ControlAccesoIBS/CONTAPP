@@ -17,7 +17,7 @@
 				<label value="SISTEMA"></label>
 				<separator></separator>
 				<combobox id="ID_APP" 
-					constraint="no empty" />
+					constraint="no empty"/>
 			</div>
 		</div>
 		
@@ -26,7 +26,7 @@
 				<label value="COMPAÑIA"></label>
 				<separator></separator>
 				<combobox id="ID_COMPANIA" 
-					constraint="no empty" />
+					constraint="no empty"/>
 			</div>
 		</div>
 		
