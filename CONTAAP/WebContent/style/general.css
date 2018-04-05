@@ -1,0 +1,798 @@
+.nota-advertencia-total-resumen-comparativo {
+	font-family: arial;
+	font-size: 10px;
+	font-weight: bold;
+	color: #000000;
+}
+
+.tituloseleccion {
+	font-family: arial;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000000;
+}
+
+.z-hbox td.z-hbox-sep {
+	width: 0px;
+}
+
+.resumenfondo {
+	background-color: #c8c9c9;
+}
+
+.z-paging {
+	background-color: #FFFFFF;
+	background-image: none;
+	border-style: none;
+}
+
+.z-popup .z-popup-tl {
+	background-color: #ffffff;
+	background-image: none;
+	background-position: top left;
+}
+
+.z-popup .z-popup-tr {
+	background-color: #ffffff;
+	background-image: none;
+	background-position: top right;
+}
+
+.z-popup .z-popup-cl {
+	background-color: #ffffff;
+	background-image: none;
+	background-position: center left;
+}
+
+.z-popup .z-popup-cm {
+	background-color: #ffffff;
+	background-image: none;
+	background-position: center center;
+}
+
+.z-popup .z-popup-cr {
+	background-color: #ffffff;
+	background-image: none;
+	background-position: center right;
+}
+
+.z-popup .z-popup-bl {
+	background-color: #ffffff;
+	background-image: none;
+	background-position: bottom left;
+}
+
+.z-popup .z-popup-bm {
+	background-color: #ffffff;
+	background-image: none;
+	background-position: bottom center;
+}
+
+.z-popup .z-popup-br {
+	background-color: #ffffff;
+	background-image: none;
+	background-position: bottom right;
+}
+
+.z-popup .z-popup-cnt .z-label {
+	font-family: arial;
+	color: #58595b;
+	font-size: 12px;
+	line-height: normal;
+	font-weight: bold;
+}
+
+body {
+	background-color: #ffffff;
+	height: 1224px: 
+	padding: 0 0;
+}
+
+.z-separator-hor-bar {
+	background-image: url(images/separator.jpg);
+	background-repeat: repeat-x;
+	background-color: transparent;
+	width: 93%;
+	margin: auto;
+}
+
+.head {
+	/* background-image: url(images/head.jpg); */
+	background-color: transparent;
+	width: 100%;
+	height: 19px;
+	margin: auto;
+}
+
+.body {
+	/*background-image: url(images/body.jpg);*/
+	background-color: transparent;
+	width: 100%;
+	min-height: 300px;
+	margin: auto;
+}
+
+.footer {
+	/* background-image: url(images/footer.jpg) */
+	background-color: transparent;
+	width: 100%;
+	height: 29px;
+	margin: auto;
+	background-repeat: no-repeat;
+}
+
+.z-datebox .z-datebox-inp {
+	font-family: arial;
+	color: #000000;
+	font-size: 12px;
+	background-color: #FFFFFF;
+	background-image: none;
+	background-position: 0px 0px;
+}
+
+.z-datebox.z-datebox-focus .z-datebox-inp {
+	font-family: arial;
+	color: #000000;
+	font-size: 12px;
+	background-color: #FFFFFF;
+	background-image: none;
+	background-position: 0px 0px;
+}
+
+.z-datebox .z-datebox-readonly.z-datebox-inp {
+	font-family: arial;
+	color: #000000;
+	background-color: #FFFFFF;
+	background-image: none;
+	background-position: 0px 0px;
+}
+
+.z-datebox.z-datebox-disd .z-datebox-inp {
+	color: #000000;
+	font-size: 12px;
+	font-family: arial;
+	background-color: #FFFFFF;
+	background-image: none;
+	background-position: 0px 0px;
+	border-style: none;
+}
+
+.z-combobox.z-combobox-focus .z-combobox-inp {
+	color: #000000;
+	font-size: 12px;
+	font-family: arial;
+	background-color: #FFFFFF;
+	background-image: none;
+	background-position: 0px 0px;
+}
+
+.z-combobox .z-combobox-inp {
+	font-family: arial;
+	color: #000000;
+	font-size: 12px;
+	background-color: #ffffff;
+	background-image: none;
+	background-position: 0px 0px;
+}
+
+.z-combobox .z-combobox-readonly.z-combobox-inp {
+	font-family: arial;
+	color: #000000;
+	font-size: 12px;
+	background-color: #FFFFFF;
+	background-image: none;
+	background-position: 0px 0px;
+}
+
+.z-combobox.z-combobox-disd .z-combobox-inp {
+	font-family: arial;
+	font-size: 12px;
+	background-color: #FFFFFF;
+	background-image: none;
+	background-position: 0px 0px;
+	border-style: none;
+}
+
+body>div.z-combobox-pp .z-combo-item-text, body>div.z-combobox-pp .z-comboitem-text
+	{
+	font-family: arial;
+	color: #000000;
+	font-size: 12px;
+}
+
+.z-textbox {
+	font-family: arial;
+	font-weight: bold;
+	color: #000000;
+	font-size: 12px;
+	background-color: #FFFFFF;
+	background-image: none;
+	background-position: 0px 0px;
+	border-width: 1px;
+	border-color: #d2cbe2;
+}
+
+.z-textbox.z-textbox-focus {
+	font-family: arial;
+	color: #000000;
+	font-size: 12px;
+	background-color: #FFFFFF;
+	background-image: none;
+	background-position: 1px 0px;
+	border-width: 1px;
+	border-color: #d2cbe2;
+}
+
+.z-textbox.z-textbox-readonly {
+	font-family: arial;
+	color: #000000;
+	font-size: 12px;
+	background-color: #FFFFFF;
+	background-image: none;
+	background-position: 0px 0px;
+	border-width: 0px;
+	border-color: #4c2f92;
+}
+
+.z-textbox.z-textbox-disd {
+	font-family: arial;
+	font-size: 12px;
+	background-color: #FFFFFF;
+	background-image: none;
+	background-position: 0px 0px;
+	border-width: 0px;
+	border-color: #4c2f92;
+}
+
+.z-textbox.z-textbox-text-invalid {
+	font-family: arial;
+	color: #000000;
+	font-size: 12px;
+	background-color: #FFFFFF;
+	background-image: none;
+	background-position: 0px 0px;
+	border-width: 0px;
+	border-color: transparent;
+}
+
+.z-textbox-rounded-inp, .z-decimalbox-rounded-inp, .z-intbox-rounded-inp,
+	.z-longbox-rounded-inp, .z-doublebox-rounded-inp {
+	font-family: arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	background-color: transparent;
+	background-repeat: repeat-x;
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-origin: padding-box;
+	background-size: auto auto;
+	height: 14px;
+	border-top-width: 0pt;
+	border-right-width-value: 0pt;
+	border-right-width-ltr-source: physical;
+	border-right-width-rtl-source: physical;
+	border-bottom-width: 0pt;
+	border-left-width-value: 0pt;
+	border-left-width-ltr-source: physical;
+	border-left-width-rtl-source: physical;
+	border-top-style: none;
+	border-right-style-value: none;
+	border-right-style-ltr-source: physical;
+	border-right-style-rtl-source: physical;
+	border-bottom-style: none;
+	border-left-style-value: none;
+	border-left-style-ltr-source: physical;
+	border-left-style-rtl-source: physical;
+	border-top-color: -moz-use-text-color;
+	border-right-color-value: -moz-use-text-color;
+	border-right-color-ltr-source: physical;
+	border-right-color-rtl-source: physical;
+	border-bottom-color: -moz-use-text-color;
+	border-left-color-value: -moz-use-text-color;
+	border-left-color-ltr-source: physical;
+	border-left-color-rtl-source: physical;
+	padding-top: 5px;
+	padding-right: 4px;
+	padding-bottom: 5px;
+	padding-left: 4px;
+	background-image: url(images/roundedg.png);
+	background-position: 0pt 0px;
+}
+
+.z-textbox-rounded-focus input.z-textbox-rounded-inp,
+	.z-decimalbox-rounded-focus input.z-decimalbox-rounded-inp,
+	.z-intbox-rounded-focus input.z-intbox-rounded-inp,
+	.z-longbox-rounded-focus input.z-longbox-rounded-inp,
+	.z-doublebox-rounded-focus input.z-doublebox-rounded-inp {
+	outline-width: medium;
+	outline-style: none;
+	outline-color: -moz-use-text-color;
+}
+
+.z-textbox-rounded-focus input.z-textbox-rounded-inp,
+	.z-decimalbox-rounded-focus input.z-decimalbox-rounded-inp,
+	.z-intbox-rounded-focus input.z-intbox-rounded-inp,
+	.z-longbox-rounded-focus input.z-longbox-rounded-inp,
+	.z-doublebox-rounded-focus input.z-doublebox-rounded-inp,
+	.z-textbox-rounded-real-readonly .z-textbox-rounded-inp,
+	.z-decimalbox-rounded-real-readonly .z-decimalbox-rounded-inp,
+	.z-intbox-rounded-real-readonly .z-intbox-rounded-inp,
+	.z-longbox-rounded-real-readonly .z-longbox-rounded-inp,
+	.z-doublebox-rounded-real-readonly .z-doublebox-rounded-inp {
+	background-image: url(images/rounded.png);
+	background-position: 0pt 0px;
+}
+
+.z-textbox-rounded-right-edge, .z-decimalbox-rounded-right-edge,
+	.z-intbox-rounded-right-edge, .z-longbox-rounded-right-edge,
+	.z-doublebox-rounded-right-edge {
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-origin: padding-box;
+	background-size: auto auto;
+	background-image: url(images/roundedrg.png);
+	background-position: 0px 0px;
+	vertical-align: top;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	display: inline-block;
+	border-top-width: 0pt;
+	border-right-width-value: 0pt;
+	border-right-width-ltr-source: physical;
+	border-right-width-rtl-source: physical;
+	border-bottom-width: 0pt;
+	border-left-width-value: 0pt;
+	border-left-width-ltr-source: physical;
+	border-left-width-rtl-source: physical;
+	border-top-style: none;
+	border-right-style-value: none;
+	border-right-style-ltr-source: physical;
+	border-right-style-rtl-source: physical;
+	border-bottom-style: none;
+	border-left-style-value: none;
+	border-left-style-ltr-source: physical;
+	border-left-style-rtl-source: physical;
+	border-top-color: -moz-use-text-color;
+	border-right-color-value: -moz-use-text-color;
+	border-right-color-ltr-source: physical;
+	border-right-color-rtl-source: physical;
+	border-bottom-color: -moz-use-text-color;
+	border-left-color-value: -moz-use-text-color;
+	border-left-color-ltr-source: physical;
+	border-left-color-rtl-source: physical;
+	height: 24px;
+	width: 5px;
+	cursor: default;
+}
+
+.z-textbox-rounded-focus input.z-textbox-rounded-inp,
+	.z-decimalbox-rounded-focus input.z-decimalbox-rounded-inp,
+	.z-intbox-rounded-focus input.z-intbox-rounded-inp,
+	.z-longbox-rounded-focus input.z-longbox-rounded-inp,
+	.z-doublebox-rounded-focus input.z-doublebox-rounded-inp {
+	outline: none;
+}
+
+.z-textbox-rounded-focus input.z-textbox-rounded-inp,
+	.z-decimalbox-rounded-focus input.z-decimalbox-rounded-inp,
+	.z-intbox-rounded-focus input.z-intbox-rounded-inp,
+	.z-longbox-rounded-focus input.z-longbox-rounded-inp,
+	.z-doublebox-rounded-focus input.z-doublebox-rounded-inp,
+	.z-textbox-rounded-real-readonly .z-textbox-rounded-inp,
+	.z-decimalbox-rounded-real-readonly .z-decimalbox-rounded-inp,
+	.z-intbox-rounded-real-readonly .z-intbox-rounded-inp,
+	.z-longbox-rounded-real-readonly .z-longbox-rounded-inp,
+	.z-doublebox-rounded-real-readonly .z-doublebox-rounded-inp {
+	background-image: url(images/rounded2.png);
+	background-position: 0 0px;
+}
+
+.z-textbox-rounded-focus i.z-textbox-rounded-right-edge,
+	.z-decimalbox-rounded-focus i.z-decimalbox-rounded-right-edge,
+	.z-intbox-rounded-focus i.z-intbox-rounded-right-edge,
+	.z-longbox-rounded-focus i.z-longbox-rounded-right-edge,
+	.z-doublebox-rounded-focus i.z-doublebox-rounded-right-edge,
+	.z-textbox-rounded-real-readonly .z-textbox-rounded-right-edge,
+	.z-decimalbox-rounded-real-readonly .z-decimalbox-rounded-right-edge,
+	.z-intbox-rounded-real-readonly .z-intbox-rounded-right-edge,
+	.z-longbox-rounded-real-readonly .z-longbox-rounded-right-edge,
+	.z-doublebox-rounded-real-readonly .z-doublebox-rounded-right-edge {
+	background-image: url(images/roundedrg.png);
+	background-position: 0 0px;
+}
+
+.z-textbox-rounded-disd, .z-decimalbox-rounded-disd,
+	.z-intbox-rounded-disd, .z-longbox-rounded-disd,
+	.z-doublebox-rounded-disd {
+	opacity: .6;
+	-moz-opacity: .6;
+	filter: alpha(opacity = 60);
+	font-family: arial;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+.z-textbox-rounded-disd, .z-textbox-rounded-disd *,
+	.z-decimalbox-rounded-disd, .z-decimalbox-rounded-disd *,
+	.z-intbox-rounded-disd, .z-intbox-rounded-disd *,
+	.z-longbox-rounded-disd, .z-longbox-rounded-disd *,
+	.z-doublebox-rounded-disd, .z-doublebox-rounded-disd * {
+	cursor: default !important;
+	color: #303030 !important;
+}
+
+.z-textbox-rounded-inp, .z-decimalbox-rounded-inp, .z-intbox-rounded-inp,
+	.z-longbox-rounded-inp, .z-doublebox-rounded-inp {
+	font-family: arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	background-color: transparent;
+	background-repeat: repeat-x;
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-origin: padding-box;
+	background-size: auto auto;
+	height: 14px;
+	border-top-width: 0pt;
+	border-right-width-value: 0pt;
+	border-right-width-ltr-source: physical;
+	border-right-width-rtl-source: physical;
+	border-bottom-width: 0pt;
+	border-left-width-value: 0pt;
+	border-left-width-ltr-source: physical;
+	border-left-width-rtl-source: physical;
+	border-top-style: none;
+	border-right-style-value: none;
+	border-right-style-ltr-source: physical;
+	border-right-style-rtl-source: physical;
+	border-bottom-style: none;
+	border-left-style-value: none;
+	border-left-style-ltr-source: physical;
+	border-left-style-rtl-source: physical;
+	border-top-color: -moz-use-text-color;
+	border-right-color-value: -moz-use-text-color;
+	border-right-color-ltr-source: physical;
+	border-right-color-rtl-source: physical;
+	border-bottom-color: -moz-use-text-color;
+	border-left-color-value: -moz-use-text-color;
+	border-left-color-ltr-source: physical;
+	border-left-color-rtl-source: physical;
+	padding-top: 5px;
+	padding-right: 4px;
+	padding-bottom: 5px;
+	padding-left: 4px;
+	background-image: url(images/roundedg.png);
+	background-position: 0pt 0px;
+}
+
+.z-textbox-rounded-focus input.z-textbox-rounded-inp,
+	.z-decimalbox-rounded-focus input.z-decimalbox-rounded-inp,
+	.z-intbox-rounded-focus input.z-intbox-rounded-inp,
+	.z-longbox-rounded-focus input.z-longbox-rounded-inp,
+	.z-doublebox-rounded-focus input.z-doublebox-rounded-inp {
+	outline-width: medium;
+	outline-style: none;
+	outline-color: -moz-use-text-color;
+}
+
+.z-textbox-rounded-focus input.z-textbox-rounded-inp,
+	.z-decimalbox-rounded-focus input.z-decimalbox-rounded-inp,
+	.z-intbox-rounded-focus input.z-intbox-rounded-inp,
+	.z-longbox-rounded-focus input.z-longbox-rounded-inp,
+	.z-doublebox-rounded-focus input.z-doublebox-rounded-inp,
+	.z-textbox-rounded-real-readonly .z-textbox-rounded-inp,
+	.z-decimalbox-rounded-real-readonly .z-decimalbox-rounded-inp,
+	.z-intbox-rounded-real-readonly .z-intbox-rounded-inp,
+	.z-longbox-rounded-real-readonly .z-longbox-rounded-inp,
+	.z-doublebox-rounded-real-readonly .z-doublebox-rounded-inp {
+	background-image: url(images/roundedg.png);
+	background-position: 0pt 0px;
+}
+
+.textoresumen {
+	font-family: arial;
+	color: #58595b;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.generaltexto {
+	font-family: arial;
+	color: #58595b;
+	font-size: 12px;
+}
+
+.space {
+	height: 25px;
+}
+
+.container {
+	width: 100%;
+	margin: auto;
+	min-height: 600px;
+}
+
+.textogeneral {
+	font-family: arial;
+	color: #58595b;
+	font-size: 12px;
+	text-align: justify;
+	display: block;
+}
+
+.encabezado {
+	font-family: arial;
+	color: #58595b;
+	font-size: 14px;
+}
+
+.titulos {
+	font-family: arial;
+	font-size: 14px;
+	font-weight: bold;
+	color: #58595b;
+}
+
+.subtitulo {
+	font-family: arial;
+	font-size: 12px;
+	font-weight: bold;
+	color: #58595b;
+}
+
+.detalle {
+	font-family: arial;
+	font-size: 12px;
+	font-weight: bold;
+	color: #58595b;
+}
+
+.logoibs {
+	width: 180px;
+	height: 75px;
+	background-image: url(images/logoIbs.png);
+	margin: center;
+	margin-top: 10px;
+}
+
+.logostahl {
+	width: 180px;
+	height: 75px;
+	background-image: url(images/logoStahl.png);
+	margin: center;
+	margin-top: 10px;
+}
+
+.logonikon {
+	width: 180px;
+	height: 75px;
+	background-image: url(images/logoNikon.png);
+	margin: center;
+	margin-top: 10px;
+}
+
+.fondoibs {
+	width: 100%;
+	height: 100px;
+	background-image: url(images/blueDegree.png);
+}
+
+.disclaimerhead {
+	width: 1100px;
+	height: 5px;
+	background-image: url(images/disclaimerhead.jpg);
+	margin: auto;
+}
+
+.disclaimerbody {
+	width: 1100px;
+	min-height: 50px;
+	background-image: url(images/disclaimerbody.jpg);
+	margin: auto;
+	text-align: center;
+}
+
+.disclaimerbody2 {
+	width: 1100px;
+	background-image: url(images/disclaimerbody.jpg);
+	background-repeat: repeat;
+	margin: auto;
+	text-align: center;
+}
+
+.disclaimerfoot {
+	width: 1100px;
+	height: 4px;
+	background-image: url(images/disclaimerfoot.jpg);
+	margin: auto;
+}
+
+.textotitulointroduccion {
+	font-family: arial;
+	color: #58595b;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.textointroduccion {
+	font-family: arial;
+	color: #58595b;
+	font-size: 13px;
+	text-align: justify;
+	display: block;
+	font-weight: 600;
+}
+
+.textolateral {
+	font-family: arial;
+	color: #58595b;
+	font-size: 13px;
+	text-align: justify;
+	display: block;
+	font-weight: 600;
+}
+
+.z-a {
+	font-family: arial;
+	font-size: 14px;
+	text-decoration: none;
+	color: #58595b;
+	font-weight: bold;
+}
+
+.z-a-disd {
+	color: #58595b !important;
+	cursor: default !important;
+	text-decoration: none !important;
+	font-weight: bold;
+}
+
+.z-a-disd:visited, .z-a-disd:hover {
+	text-decoration: none !important;
+	cursor: default !important;
+}
+
+.espacio {
+	height: 20px;
+}
+
+.retiro {
+	background-color: transparent;
+}
+
+.textoretiro {
+	font-weight: bold;
+	color: #1c75bc;
+	font-size: 12px;
+	text-decoration: underline;
+}
+
+.segundoretiro {
+	background-color: #2b2f6b;
+	height: 20px;
+}
+
+.segundotextoretiro {
+	font-weight: bold;
+	color: white;
+	font-size: 12px;
+}
+
+.comentariosretiro {
+	font-weight: bold;
+	color: #58595b;
+	font-size: 10px;
+	font-family: arial;
+}
+
+.firstColumnHeader {
+	background-color: white;
+	background-image: url(images/grid.jpg);
+}
+
+.lastColumnHeader {
+	background-color: white;
+	background-image: url(images/grid.jpg);
+	background-position: right top;
+}
+
+.largeFirstColumnHeader {
+	background-color: white;
+	background-image: url(images/gridg.jpg);
+	background-repeat: no-repeat;
+}
+
+.shortFirstColumnHeader {
+	background-color: white;
+	background-image: url(images/gridl.jpg);
+	background-repeat: no-repeat;
+}
+
+.proadFirstColumnHeader {
+	background-color: white;
+	background-image: url(images/grida.jpg);
+	background-repeat: no-repeat;
+}
+
+.proadLastColumnHeader {
+	background-color: white;
+	background-image: url(images/grida.jpg);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+.firstColumnHeaderpng {
+	background-color: white;
+	background-image: url(images/grid.png);
+	background-repeat: no-repeat;
+}
+
+.lastColumnHeaderpng {
+	background-color: white;
+	background-image: url(images/grid.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+.textodisclaimer {
+	font-family: arial;
+	color: #58595b;
+	font-size: 10px;
+	text-align: center;
+	display: block;
+	font-weight: 600;
+}
+
+.radiocentro.z-listitem-img-radio, .radiocentro.z-listgroup-img-radio {
+	background-position: 0 -13px;
+	margin-top: 10px;
+}
+
+style ="margin-bottom: 10px; background-image: url (images/menuf.jpg );"
+
+
+.z-panel .z-panel-header {
+	font-family: arial;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.z-panel .z-panel-hm {
+	color: #ffffff;
+	background-color: #335EE9;
+	background-image: none;
+	background-position: top middle;
+}
+
+.z-panel .z-panel-tl {
+	color: #ffffff;
+	background-color: #335EE9;
+	background-image: none;
+	background-position: top left;
+}
+
+.z-panel .z-panel-tr {
+	color: #ffffff;
+	background-color: #335EE9;
+	background-image: none;
+	background-position: top right;
+}
+
+.z-panel .z-panel-hl {
+	color: #ffffff;
+	background-color: #335EE9;
+	background-image: none;
+	background-position: top left;
+}
+
+.z-panel .z-panel-hr {
+	color: #ffffff;
+	background-color: #335EE9;
+	background-image: none;
+	background-position: top right;
+}

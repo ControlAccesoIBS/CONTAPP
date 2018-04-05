@@ -1,0 +1,80 @@
+.z-button.boton-lupa .z-button-cm{
+	width : 34px; 
+	height : 35px; 
+	background-color : none; 
+	background-image : url(images/botonok.jpg); 
+	background-position : center center;
+	background-repeat : no-repeat; 
+}
+
+.z-button.boton-lupa .z-button-tl{
+	width : 0px; 
+	height : 0px; 
+	background-color : none; 
+	background-repeat : no-repeat; 
+	background-image : none; 
+	background-position : top left;
+}
+
+.z-button.boton-lupa .z-button-cl{
+	width : 0px; 
+	height : 0px; 
+	background-color : none; 
+	background-image : none; 
+	background-position : center left;
+	background-repeat : no-repeat; 
+}
+
+.z-button.boton-lupa .z-button-cr{
+	width : 0px; 
+	height : 0px;
+	background-color : none; 
+	background-image : none; 
+	background-position : center right;
+	background-repeat : none; 
+}
+
+.z-button.boton-lupa .z-button-bl{
+	width : 0px; 
+	height : 0px;
+	background-color : none; 
+	background-image : none; 
+	background-position : bottom left;
+	background-repeat : none; 
+}
+
+.z-button.boton-lupa .z-button-bm{
+	width : 0px; 
+	height : 0px;
+	background-color : none; 
+	background-image : none; 
+	background-position : bottom center;
+	background-repeat : no-repeat; 
+}
+
+.z-button.boton-lupa .z-button-br{
+	width : 0px; 
+	height : 0px;
+	background-color : none; 
+	background-image : none; 
+	background-position : bottom right;
+	background-repeat : no-repeat; 
+}
+
+.z-button.boton-lupa .z-button-tm{
+	width : 0px; 
+	height : 0px;
+	background-color : none; 
+	background-image : none; 
+	background-position : top center;
+	background-repeat : no-repeat; 
+}
+
+.z-button.boton-lupa .z-button-tr{
+	width : 0px; 
+	height : 0px;
+	background-color : none; 
+	background-image : none; 
+	background-position : top right;
+	background-repeat : no-repeat; 
+}

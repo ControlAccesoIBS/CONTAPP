@@ -1,0 +1,73 @@
+.fondosubmenu{
+	width:1190px;
+	height:55px;
+	background-image:none;
+	background-color:transparent;
+	background-repeat :no-repeat; 
+	}
+.z-menubar-hor.twsubmenu{
+	height:50px;
+}
+.contsubmenu{
+background-image:none;
+background-repeat :repeat-x; 
+}
+
+.z-menubar-hor.twsubmenu .z-menu-item-btn{
+	font-family : arial; 
+	color :#4C2F92; 
+	font-size : 12px; 
+	height:45px;
+}
+	.z-menubar-hor.twsubmenu .z-menu-item .z-menu-item-inner-l
+	, .z-menubar-hor.twsubmenu .z-menu-item .z-menu-item-inner-m
+	, .z-menubar-hor.twsubmenu .z-menu-item .z-menu-item-inner-r
+{
+	background-color : none; 
+	background-image : none; 
+	background-repeat : no-repeat; 
+}
+.z-menubar-hor.twsubmenu .z-menu,
+.z-menubar-hor.twsubmenu .z-menu-item,
+.z-menubar-hor.twsubmenu .z-menu-btn,
+.z-menubar-hor.twsubmenu .z-menu-item-btn,
+.z-menubar-hor.twsubmenu span,
+.z-menubar-hor.twsubmenu a,
+.z-menubar-hor.twsubmenu div,
+.z-menubar-ver.twsubmenu .z-menu,
+.z-menubar-ver.twsubmenu .z-menu-item,
+.z-menubar-ver.twsubmenu .z-menu-btn,
+.z-menubar-ver.twsubmenu .z-menu-item-btn,
+.z-menubar-ver.twsubmenu span,
+.z-menubar-ver.twsubmenu a,
+.z-menubar-ver.twsubmenu div,
+.z-menu-cnt.twsubmenu,
+.z-menu-item-cnt.twsubmenu{
+font-weight: bold;
+white-space: nowrap;
+font-family: Arial;
+font-size: 12px;
+	color : #58595b;
+}
+.activosub{
+	background-image:url(images/menuover.jpg);
+	background-repeat:no-repeat;
+	margin:auto;
+	background-position : 45% 10px;
+}
+.inactivosub{
+	
+	background-repeat:repeat;
+	margin:auto;
+	background-position : 0 0px;
+}
+.z-menubar-hor.twsubmenu{
+	background-color : transparent; 
+	background-image : none; 
+	border-style : none; 
+	border-top-style : none; 
+	border-right-style : none; 
+	border-bottom-style : none; 
+	border-left-style : none; 
+	background-repeat : no-repeat; 
+}

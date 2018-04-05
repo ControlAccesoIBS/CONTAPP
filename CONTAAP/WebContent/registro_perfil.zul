@@ -1,0 +1,76 @@
+<?page title="Registro de Perfiles" contentType="text/html;charset=UTF-8"?>
+<?link rel="stylesheet" type="text/css" href="style/boton.css"?>
+<?link rel="stylesheet" type="text/css" href="css/bootstrap.css"?>
+<?script type="text/javascript" src="js/jquery-1.12.1.js"?>
+
+<zk>
+
+	<navbar orient="vertical">
+		<navitem label="FORMULARIO DE REGISTRO DE PERFILES" />
+		
+	</navbar>
+
+<div sclass="container-fluid text-center py-3">
+<separator></separator>
+<label value="REGISTRO DE PERFILES" sclass="h2"></label>
+</div>
+	<div sclass="container-fluid py-3">
+		<div sclass="container">
+			<div sclass="row text-center">
+				<div sclass="col-md-12 text-left">
+					<label value="PERFIL"></label>
+					<separator></separator>
+					<textbox id="ID_PERFIL" sclass="form-control"
+						constraint="no empty" placeholder="Administrador" />
+				</div>
+			</div>
+		</div>
+
+		<div sclass="container">
+			<div sclass="row text-center">
+				<div sclass="col-md-12  py-3 text-left">
+					<label value="DESCRIPCIÓN"></label>
+					<separator></separator>
+					<textbox id="DESCRIPCION_PERFIL" sclass="form-control"
+						constraint="no empty" />
+				</div>
+			</div>
+		</div>
+		
+			<div sclass="container">
+			<div sclass="row text-center">
+				<div sclass="col-md-5 text-left">
+					<label value="ESTATUS" />
+					<separator></separator>
+					<combobox id="ESTATUS">
+						<comboitem label="A" />
+						<comboitem label="E" />
+					</combobox>
+				</div>
+			</div>
+		</div>
+
+		<div sclass="container">
+			<div sclass="row text-center py-3">
+				<div sclass="col-md-5 text-left">
+					<label value="ID DEL CLIENTE"></label>
+					<separator></separator>
+					<combobox id="ID_CLIENTE" sclass="text-left"/>
+				</div>
+				<div sclass=" col-md-4 text-left">
+					<label value="ID DE COMPAÑIA"></label>
+					<separator></separator>
+					<combobox id="ID_COMPANIA" style="display" sclass="text-left" disabled="false"/>
+				</div>
+			</div>
+		</div>
+		
+		<div sclass=" py-3 text-center">
+			<button sclass="z-botton z-button-cm" type="submit" id="Registrar"
+				label="REGISTRAR">
+			</button>
+			<button  sclass="z-botton z-button-cm" id="Editar" label="LIMPIAR FORMULARIO"></button>
+			<button sclass="z-botton z-button-cm" id="Eliminar" label="CANCELAR"></button>
+		</div>
+	</div>
+</zk>

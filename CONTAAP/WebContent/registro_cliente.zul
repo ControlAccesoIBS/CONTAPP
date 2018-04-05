@@ -1,0 +1,89 @@
+<?page title="Registro de cliente" contentType="text/html;charset=UTF-8"?>
+<?link rel="stylesheet" type="text/css" href="style/boton.css"?>
+<?link rel="stylesheet" type="text/css" href="css/bootstrap.css"?>
+<?script type="text/javascript" src="js/jquery-1.12.1.js"?>
+
+<zk>
+
+	<navbar orient="vertical">
+		<navitem label="FORMULARIO DE REGISTRO DE CLIENTES" />
+		
+	</navbar>
+
+<div sclass="container-fluid text-center py-3">
+<separator></separator>
+<label value="REGISTRO DE CLIENTES" sclass="h2"></label>
+</div>
+	<div sclass="container-fluid py-3">
+		<div sclass="container">
+			<div sclass="row text-center">
+				<div sclass="col-md-12 text-left">
+					<label value="ID_CLIENTE"></label>
+					<separator></separator>
+					<textbox id="ID_CLIENTE" sclass="form-control"
+						constraint="no empty"  />
+				</div>
+			</div>
+		</div>
+
+		<div sclass="container">
+			<div sclass="row text-center">
+				<div sclass="col-md-12 text-left">
+					<label value="NOMBRE"></label>
+					<separator></separator>
+					<textbox id="NOMBRE_CL" sclass="form-control"
+						constraint="no empty" />
+				</div>
+			</div>
+		</div>
+
+		<div sclass="container">
+			<div sclass="row text-center py-3">
+				<div sclass="col-md-5 text-left">
+					<label value="TEL. CÉLULAR"></label>
+					<separator></separator>
+					<textbox id="TEL_CEL" sclass="text-left" />
+				</div>
+				<div sclass="col-md-4 text-left">
+					<label value="TEL. OFICINA"></label>
+					<separator></separator>
+					<textbox id="TEL_OFICINA" sclass="text-left" />
+				</div>
+			</div>
+		</div>
+
+		<div sclass="container">
+			<div sclass="row text-center">
+				<div sclass="col-md-5 text-left">
+					<label value="EMAIL"></label>
+					<separator></separator>
+					<textbox id="EMAIL" sclass="form-control"
+						constraint="no empty" placeholder="Ejemplo: usuario1@ejemplo.com" />
+				</div>
+			</div>
+		</div>
+
+		<div sclass="container">
+			<div sclass="row text-center py-3">
+				<div sclass="col-md-5 text-left">
+					<label value="ESTATUS" />
+					<separator></separator>
+					<combobox id="ESTATUS">
+						<comboitem label="A" />
+						<comboitem label="I" />
+					</combobox>
+				</div>
+			</div>
+		</div>
+			
+
+
+		<div sclass=" py-3 text-center">
+			<button sclass="z-botton z-button-cm" type="submit" id="Registrar"
+				label="REGISTRAR">
+			</button>
+			<button  sclass="z-botton z-button-cm" id="Editar" label="LIMPIAR FORMULARIO"></button>
+			<button sclass="z-botton z-button-cm" id="Eliminar" label="CANCELAR"></button>
+		</div>
+	</div>
+</zk>

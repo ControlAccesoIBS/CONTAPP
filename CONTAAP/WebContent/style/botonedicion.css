@@ -1,0 +1,65 @@
+
+.z-button.boton-edicion .z-button-cm{
+	width : 34px; 
+	height : 35px; 
+	background-color : none; 
+	background-image : url(images/botonedicion.png); 
+	background-position : center center;
+	background-repeat : no-repeat; 
+}
+
+.z-button.boton-edicion .z-button-tl{
+	background-color : none; 
+	background-repeat : no-repeat; 
+	background-image : none; 
+	background-position : top left;
+}
+
+.z-button.boton-edicion .z-button-cl{
+	background-color : none; 
+	background-image : none; 
+	background-position : center left;
+	background-repeat : no-repeat; 
+}
+
+.z-button.boton-edicion .z-button-cr{
+	background-color : none; 
+	background-image : none; 
+	background-position : center right;
+	background-repeat : none; 
+}
+
+.z-button.boton-edicion .z-button-bl{
+	background-color : none; 
+	background-image : none; 
+	background-position : bottom left;
+	background-repeat : none; 
+}
+
+.z-button.boton-edicion .z-button-bm{
+	background-color : none; 
+	background-image : none; 
+	background-position : bottom center;
+	background-repeat : no-repeat; 
+}
+
+.z-button.boton-edicion .z-button-br{
+	background-color : none; 
+	background-image : none; 
+	background-position : bottom right;
+	background-repeat : no-repeat; 
+}
+
+.z-button.boton-edicion .z-button-tm{
+	background-color : none; 
+	background-image : none; 
+	background-position : top center;
+	background-repeat : no-repeat; 
+}
+
+.z-button.boton-edicion .z-button-tr{
+	background-color : none; 
+	background-image : none; 
+	background-position : top right;
+	background-repeat : no-repeat; 
+}

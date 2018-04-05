@@ -1,0 +1,81 @@
+.z-button .z-button-cm{
+	font-family : arial; 
+	color : #FFFFFF; 
+	font-size : 15px; 
+	font-weight: 600;
+	background-color : none; 
+	background-image : url(images/cm.png);
+	background-position : center center;
+	background-repeat : repeat; 
+}
+
+.z-button-cm{
+	font-family : arial; 
+	color : #FFFFFF; 
+	font-size : 15px; 
+	font-weight: 600;
+	background-color : none; 
+	background-image : url(images/cm.png);
+	background-position : center center;
+	background-repeat : repeat; 
+}
+
+.z-button .z-button-tl{
+	background-image : url(images/tl.png); 
+	background-position : top left;
+	background-color : none; 
+	width:5px;
+	height:5px;
+}
+
+.z-button .z-button-tm{
+	background-color : none; 
+	background-image : url(images/tm.png); 
+	background-position : top center;
+	background-repeat : repeat; 
+}
+
+.z-button .z-button-tr{
+	background-color : none; 
+	background-image : url(images/tr.png); 
+	background-position : top right;
+	width:5px;
+	height:5px;
+}
+
+.z-button .z-button-cl{
+	background-color : none; 
+	background-image : url(images/cl.png); 
+	background-position : center left;
+	background-repeat : repeat; 
+}			
+
+.z-button .z-button-cr{
+	background-color : none; 
+	background-image : url(images/cr.png); 
+	background-position : center right;
+	background-repeat : repeat; 
+}
+
+.z-button .z-button-bl{
+	background-color : none; 
+	background-image : url(images/bl.png); 
+	background-position : bottom left;
+	width:5px;
+	height:5px;
+}
+
+.z-button .z-button-bm{
+	background-color : none; 
+	background-image : url(images/bm.png); 
+	background-position : bottom center;
+	background-repeat : repeat; 
+}
+
+.z-button .z-button-br{
+	background-color : none; 
+	background-image : url(images/br.png); 
+	background-position : bottom right;
+	width:5px;
+	height:5px;
+}
