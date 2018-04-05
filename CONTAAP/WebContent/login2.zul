@@ -1,0 +1,78 @@
+<?page title="Login" contentType="text/html;charset=UTF-8"?>
+<?link rel="stylesheet" type="text/css" href="style/boton.css"?>
+<?link rel="stylesheet" type="text/css" href="css/bootstrap.css"?>
+<?script type="text/javascript" src="js/jquery-1.12.1.js"?>
+<zk>
+
+	<div sclass="text-center py-3">
+		<separator></separator>
+		<label value="Login" sclass="h2"></label>
+	</div>
+
+	<div sclass="container text-center py-5">
+
+
+		<div sclass="container text-center col-md-5">
+			<div sclass="text-left ">
+				<label value="SISTEMA"></label>
+				<separator></separator>
+				<combobox id="ID_APP" 
+					constraint="no empty" />
+			</div>
+		</div>
+		
+		<div sclass="container text-center col-md-5">
+			<div sclass="text-left">
+				<label value="COMPAÑIA"></label>
+				<separator></separator>
+				<combobox id="ID_COMPANIA" 
+					constraint="no empty" />
+			</div>
+		</div>
+		
+		<div sclass="container text-center col-md-5">
+			<div sclass="text-left">
+				<label value="USUARIO"></label>
+				<separator></separator>
+				<textbox id="USERNAME" sclass="form-control"
+					constraint="no empty" />
+			</div>
+		</div>
+
+		<div sclass="text-right container col-md-5 py-1">
+			<div>
+				<label value=" ¿Haz olvidado el usuario?"></label>
+			</div>
+		</div>
+
+		<div sclass="container text-center col-md-5">
+			<div sclass="text-left">
+				<label value="PASSWORD"></label>
+				<separator></separator>
+				<textbox id="PASSWORD_U" sclass="form-control"
+					constraint="no empty" />
+			</div>
+		</div>
+
+		<div>
+			<div sclass="text-right container col-md-5 py-1">
+				<div>
+					<label sclass="text-left"
+						value="¿Haz olvidado el password?">
+					</label>
+				</div>
+			</div>
+		</div>
+		
+		<div sclass="py-5 text-center container col-md-5">
+			<button sclass="z-button.boton_login z-button-cm"
+				type="submit" id="INICIO_SESION" label="INICIAR SESIÓN">
+				</button>
+			<button sclass="z-button.boton_login z-button-cm"
+				type="submit" id="REGISTRAR" label="REGISTRAR">
+			</button>
+		</div>
+
+
+	</div>
+</zk>
