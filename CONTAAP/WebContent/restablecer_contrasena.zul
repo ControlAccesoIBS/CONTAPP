@@ -2,8 +2,6 @@
 <?link rel="stylesheet" type="text/css" href="style/boton.css"?>
 <?link rel="stylesheet" type="text/css" href="css/bootstrap.css"?>
 <?script type="text/javascript" src="js/jquery-1.12.1.js"?>
-<!--  este es el script de recapcha de google -->
-<?script src="https://www.google.com/recaptcha/api.js"?>
 <zk>
 
 	<navbar orient="vertical">
@@ -25,7 +23,7 @@
 	<div apply="org.zkoss.bind.BindComposer"
 		viewModel="@id('vm') @init('com.codigoRC.FormViewModel')"
 		validationMessages="@id('vmsgs')"
-		form="@id('fx') @validator('com.codigoRC.FormValidator',password=vm.c_password, captcha=vm.captcha, captchaInput=vm.captchaInput)">
+		form="@id('fx') @validator('com.codigoRC.FormValidator',c_password=vm.c_password, captcha=vm.captcha, captchaInput=vm.captchaInput)">
 		<div sclass="container-fluid py-3">
 
 			<div sclass="container-fluid py-3">
