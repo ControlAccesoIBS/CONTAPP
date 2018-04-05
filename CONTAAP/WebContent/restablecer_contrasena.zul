@@ -1,0 +1,91 @@
+<?page title="Mantenimiento de usuario" contentType="text/html;charset=UTF-8"?>
+<?link rel="stylesheet" type="text/css" href="style/boton.css"?>
+<?link rel="stylesheet" type="text/css" href="css/bootstrap.css"?>
+<?script type="text/javascript" src="js/jquery-1.12.1.js"?>
+<!--  este es el script de recapcha de google -->
+<?script src="https://www.google.com/recaptcha/api.js"?>
+<zk>
+
+	<navbar orient="vertical">
+		<navitem label="RESTABLECER CONTRASEÑA" />
+
+	</navbar>
+
+	<div sclass="container-fluid text-center py-3">
+		<separator></separator>
+		<label value="RESTABLECER CONTRASEÑA" sclass="h2"></label>
+	</div>
+
+	<div sclass="container-fluid text-center py-3">
+		<separator></separator>
+		<label
+			value="Para restablecer la contraseña, favor de introducir el correo con el que se registro">
+		</label>
+	</div>
+	<div apply="org.zkoss.bind.BindComposer"
+		viewModel="@id('vm') @init('com.codigoRC.FormViewModel')"
+		validationMessages="@id('vmsgs')"
+		form="@id('fx') @validator('com.codigoRC.FormValidator',c_password=vm.c_password, captcha=vm.captcha, captchaInput=vm.captchaInput)">
+		<div sclass="container-fluid py-3">
+
+			<div sclass="container-fluid py-3">
+				<div sclass="container">
+					<div sclass="row text-center">
+						<div sclass="col-md-12 text-left">
+							<label value="NUEVA CONTRASEÑA"></label>
+							<separator></separator>
+							<textbox id="NUEVA_PASSW" value="@bind(fx.password)"
+								sclass="form-control" constraint="no empty" type="password" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div sclass="container-fluid ">
+				<div sclass="container">
+					<div sclass="row text-center">
+						<div sclass="col-md-12 text-left">
+							<label value="CONFIRMAR CONTRASEÑA"></label>
+							<separator></separator>
+							<textbox id="CONFIRMAR_PASSW" value="@bind(fx.c_password)"
+								sclass="form-control" constraint="no empty" type="password" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div sclass="container-fluid">
+				<div sclass="container">
+					<vlayout>
+						<hlayout>
+							<textbox value="@bind(vm.captchaInput)"
+								width="150px" tabindex="12" />
+							<label class="error"
+								value="@load(vmsgs['captcha'])" />
+						</hlayout>
+						<hlayout>
+							<captcha value="@load(vm.captcha)"
+								width="150px"
+								height="50px" frame="true" />
+							<vlayout>
+								<button label="Regenerate"
+									onClick="@command('regenerate')" width="100px" />
+							</vlayout>
+						</hlayout>
+					</vlayout>
+
+				</div>
+			</div>
+
+
+			<div sclass="text-center py-5">
+				<button sclass="z-botton z-button-cm" type="submit"
+					id="ENVIAR" label="ENVIAR" onClick="@command('submit')">
+				</button>
+				<button sclass="z-botton z-button-cm" id="Eliminar"
+					label="CANCELAR">
+				</button>
+			</div>
+		</div>
+	</div>
+
+</zk>

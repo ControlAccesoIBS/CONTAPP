@@ -1,0 +1,153 @@
+<?page title="Registro de usuario" contentType="text/html;charset=UTF-8"?>
+<?link rel="stylesheet" type="text/css" href="style/boton.css"?>
+<?link rel="stylesheet" type="text/css" href="css/bootstrap.css"?>
+<?script type="text/javascript" src="js/jquery-1.12.1.js"?>
+
+<zk>
+
+	<navbar orient="vertical">
+		<navitem label="FORMULARIO DE REGISTRO DE USUARIOS" />
+
+	</navbar>
+
+	<div sclass="container-fluid text-center py-3">
+		<separator></separator>
+		<label value="REGISTRO DE USUARIOS" sclass="h2"></label>
+	</div>
+	<div sclass="container-fluid py-3">
+		<div sclass="container">
+			<div sclass="row text-center">
+				<div sclass="col-md-12 text-left">
+					<label value="USUARIO"></label>
+					<separator></separator>
+					<textbox id="USERNAME" sclass="form-control"
+						constraint="no empty" placeholder="AMARES" />
+				</div>
+			</div>
+		</div>
+
+		<div sclass="container">
+			<div sclass="row text-center">
+				<div sclass="col-md-12 text-left">
+					<label value="RFC"></label>
+					<separator></separator>
+					<textbox id="RFC_USUARIO" sclass="form-control"
+						constraint="no empty" />
+				</div>
+			</div>
+		</div>
+
+		<div sclass="container">
+			<div sclass="row text-center">
+				<div sclass="col-md-12 text-left">
+					<label value="NOMBRE"></label>
+					<separator></separator>
+					<textbox id="NOMBRE" placeholder="Abraham Mares"
+						sclass="form-control" constraint="no empty" />
+				</div>
+			</div>
+		</div>
+
+		<div sclass="container">
+			<div sclass="row text-center py-3">
+				<div sclass="col-md-5 text-left">
+					<label value="CÉLULAR"></label>
+					<separator></separator>
+					<textbox id="TEL_CEL" sclass="text-left" />
+				</div>
+				<div sclass="col-md-4 text-left">
+					<label value="TEL. OFICINA"></label>
+					<separator></separator>
+					<textbox id="TEL_OFICINA" sclass="text-left" />
+				</div>
+			</div>
+		</div>
+
+		<div sclass="container">
+			<div sclass="row text-center">
+				<div sclass="col-md-5 text-left">
+					<label value="EMAIL"></label>
+					<separator></separator>
+					<textbox id="EMAIL_USER" sclass="form-control"
+						constraint="no empty" placeholder="Ejemplo: usuario1@ejemplo.com" />
+				</div>
+				<div sclass="col-md-5 text-left">
+					<label value="PASSWORD"></label>
+					<separator></separator>
+					<textbox id="PASSWORD_U" sclass="form-control"
+						constraint="no empty" type="password" />
+				</div>
+			</div>
+		</div>
+
+		<div sclass="container">
+			<div sclass="row text-center py-3">
+				<div sclass="col-md-5 text-left">
+					<label value="TIPO DE USUARIO" />
+					<separator></separator>
+					<combobox id="TIPO_USUARIO">
+						<comboitem label="I" />
+						<comboitem label="E" />
+					</combobox>
+				</div>
+			</div>
+		</div>
+
+
+		<div sclass="container">
+			<div sclass="row text-center py-3">
+				<div sclass="col-md-5 text-left">
+					<label value="ID DEL PERFIL"></label>
+					<separator></separator>
+					<combobox id="ID_PERFIL" sclass="text-left" />
+				</div>
+				<div sclass=" col-md-4 text-left">
+					<label value="ID DEL CLIENTE"></label>
+					<separator></separator>
+					<combobox id="ID_CLIENTE" sclass="text-left" />
+				</div>
+
+				<div sclass=" text-left">
+					<label value="ID DE LA COMPAÑIA"></label>
+					<separator></separator>
+					<combobox id="ID_COMPANIA" sclass="text-left" />
+				</div>
+			</div>
+		</div>
+
+		<div sclass="container">
+			<div sclass="row text-center py-3">
+				<div sclass="col-md-5 text-left">
+					<label value="OCUPACIÓN"></label>
+					<separator></separator>
+					<combobox>
+						<comboitem label="EMPLEADO" />
+						<comboitem label="PROVEEDOR" />
+					</combobox>
+				</div>
+				<div sclass=" col-md-4 text-left">
+					<label value="ID DE OCUPACIÓN"></label>
+					<separator></separator>
+					<combobox sclass="text-left">
+						<comboitem label="E00023" />
+						<comboitem label="P00023" />
+					</combobox>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div sclass=" py-3 text-center">
+			<button sclass="z-botton z-button-cm" type="submit"
+				id="Registrar" label="REGISTRAR">
+			</button>
+			<button sclass="z-botton z-button-cm" id="Editar"
+				label="LIMPIAR FORMULARIO">
+			</button>
+			<button sclass="z-botton z-button-cm" id="Eliminar"
+				label="CANCELAR">
+			</button>
+		</div>
+	</div>
+</zk>

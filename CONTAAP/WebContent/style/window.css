@@ -1,0 +1,77 @@
+
+	.z-window-modal .z-window-modal-tl
+,.z-window-highlighted .z-window-highlighted-tl{
+	background-color : #0095A1; /*PRO*/
+	background-image : none; /*PRO*/
+	background-position : top left;
+}
+
+	.z-window-modal .z-window-modal-tr
+, .z-window-highlighted .z-window-highlighted-tr{
+	background-color : #0095A1; /*PRO*/
+	background-image : none; /*PRO*/
+	background-position : top right;
+}
+
+	.z-window-modal-hl,  .z-window-modal-tl-noborder
+, .z-window-highlighted-hl,  .z-window-highlighted-tl-noborder {
+	background-color : #0095A1; /*PRO*/
+	background-image : none; /*PRO*/
+	background-position : top left;
+}
+
+	.z-window-modal-hm,  .z-window-modal-tm-noborder
+, .z-window-highlighted-hm,  .z-window-highlighted-tm-noborder{
+	background-color : #0095A1; /*PRO*/
+	background-image : none; /*PRO*/
+	background-position : top center;
+}
+
+	.z-window-modal-hr,  .z-window-modal-tr-noborder
+, .z-window-highlighted-hr,  .z-window-highlighted-tr-noborder{
+	background-color : #0095A1; /*PRO*/
+	background-image : none; /*PRO*/
+	background-position : top right;
+}
+
+	.z-window-modal .z-window-modal-cl
+,.z-window-highlighted .z-window-highlighted-cl{
+	background-color : #0095A1; /*PRO*/
+	background-image : none; /*PRO*/
+	background-position : center left;
+}
+
+	.z-window-modal .z-window-modal-cr
+,.z-window-highlighted .z-window-highlighted-cr{
+	background-color : #0095A1; /*PRO*/
+	background-image : none; /*PRO*/
+	background-position : center right;
+}
+
+	.z-window-modal .z-window-modal-bl
+, .z-window-highlighted .z-window-highlighted-bl{
+	background-color : #0095A1; /*PRO*/
+	background-image : none; /*PRO*/
+	background-position : bottom left;
+}
+
+	.z-window-modal .z-window-modal-br
+,.z-window-highlighted .z-window-highlighted-br{
+	background-color : #0095A1; /*PRO*/
+	background-image : none; /*PRO*/
+	background-position : bottom right;
+}
+
+.z-window-modal, .z-window-highlighted{
+	border-style : none; /*PRO*/
+}
+.z-window-embedded-header,
+.z-window-modal-header,
+.z-window-popup-header,
+.z-window-highlighted-header,
+.z-window-overlapped-header {
+color: #ffffff;
+font-weight: bold;
+padding-top: 3px;
+padding-bottom: 6px;
+}

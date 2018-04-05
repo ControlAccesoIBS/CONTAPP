@@ -1,0 +1,275 @@
+.z-combobox-rounded-inp, .z-bandbox-rounded-inp, .z-datebox-rounded-inp, .z-timebox-rounded-inp, .z-spinner-rounded-inp, .z-doublespinner-rounded-inp, .z-combobox-inp, .z-bandbox-inp, .z-datebox-inp, .z-timebox-inp, .z-spinner-inp, .z-doublespinner-inp {
+font-family: arial,sans-serif;
+font-size: 12px;
+color:#000000;
+font-weight: bold;
+background-color: transparent;
+background-image: url(images/roundedg.png);
+background-repeat: repeat-x;
+background-attachment: scroll;
+background-position: 0pt 0pt;
+background-clip: border-box;
+background-origin: padding-box;
+background-size: auto auto;
+border-top-width: 1px;
+border-bottom-width: 1px;
+border-left-width-value: 1px;
+border-left-width-ltr-source: physical;
+border-left-width-rtl-source: physical;
+border-top-style: solid;
+border-bottom-style: solid;
+border-left-style-value: solid;
+border-left-style-ltr-source: physical;
+border-left-style-rtl-source: physical;
+border-top-color: #cccccc;
+border-bottom-color: #cccccc;
+border-left-color-value: #cccccc;
+border-left-color-ltr-source: physical;
+border-left-color-rtl-source: physical;
+border-right-width-value: 0pt;
+border-right-style-value: none;
+border-right-color-value: -moz-use-text-color;
+border-right-width-ltr-source: physical;
+border-right-width-rtl-source: physical;
+border-right-style-ltr-source: physical;
+border-right-style-rtl-source: physical;
+border-right-color-ltr-source: physical;
+border-right-color-rtl-source: physical;
+padding-top: 2px;
+padding-bottom: 2px;
+padding-left: 4px;
+border-top-left-radius: 0px;
+border-top-right-radius: 0pt;
+border-bottom-right-radius: 0pt;
+border-bottom-left-radius: 0px;
+height: 15px;
+}
+
+.z-combobox-rounded-inp, .z-bandbox-rounded-inp, .z-datebox-rounded-inp, .z-timebox-rounded-inp, .z-spinner-rounded-inp, .z-doublespinner-rounded-inp{
+border-top-width: 0pt;
+border-right-width-value: 0pt;
+border-right-width-ltr-source: physical;
+border-right-width-rtl-source: physical;
+border-bottom-width: 0pt;
+border-left-width-value: 0pt;
+border-left-width-ltr-source: physical;
+border-left-width-rtl-source: physical;
+border-top-style: none;
+border-right-style-value: none;
+border-right-style-ltr-source: physical;
+border-right-style-rtl-source: physical;
+border-bottom-style: none;
+border-left-style-value: none;
+border-left-style-ltr-source: physical;
+border-left-style-rtl-source: physical;
+border-top-color: -moz-use-text-color;
+border-right-color-value: -moz-use-text-color;
+border-right-color-ltr-source: physical;
+border-right-color-rtl-source: physical;
+border-bottom-color: -moz-use-text-color;
+border-left-color-value: -moz-use-text-color;
+border-left-color-ltr-source: physical;
+border-left-color-rtl-source: physical;
+padding-top: 5px;
+padding-right: 4px;
+padding-bottom: 5px;
+padding-left: 4px;
+height: 14px;
+}
+
+.z-datebox-rounded-inp {
+background-image: url(images/roundedg.png);
+}
+
+.z-combobox-rounded-readonly, .z-bandbox-rounded-readonly, .z-datebox-rounded-readonly, .z-timebox-rounded-readonly, .z-spinner-rounded-readonly, .z-doublespinner-rounded-readonly {
+background-position: 0pt 0px;
+background-image: url(images/roundedg.png);
+
+}
+
+.z-datebox-rounded-readonly{
+background-image: url(images/roundedg.png);
+}
+
+.z-combobox-rounded-focus .z-combobox-rounded-inp, .z-bandbox-rounded-focus .z-bandbox-rounded-inp, .z-datebox-rounded-focus .z-datebox-rounded-inp, .z-timebox-rounded-focus .z-timebox-rounded-inp, .z-spinner-rounded-focus .z-spinner-rounded-inp, .z-doublespinner-rounded-focus .z-doublespinner-rounded-inp {
+background-position: 0pt 0px;
+}
+
+.z-combobox-rounded-focus .z-combobox-rounded-readonly, .z-bandbox-rounded-focus .z-bandbox-rounded-readonly, .z-datebox-rounded-focus .z-datebox-rounded-readonly, .z-timebox-rounded-focus .z-timebox-rounded-readonly, .z-spinner-rounded-focus .z-spinner-rounded-readonly, .z-doublespinner-rounded-focus .z-doublespinner-rounded-readonly{
+background-position: 0pt 0px;
+}
+
+i.z-combobox-rounded-btn, i.z-datebox-rounded-btn, i.z-bandbox-rounded-btn, i.z-timebox-rounded-btn, i.z-spinner-rounded-btn, i.z-doublespinner-rounded-btn, i.z-combobox-btn, i.z-datebox-btn, i.z-bandbox-btn, i.z-timebox-btn, i.z-spinner-btn, i.z-doublespinner-btn {
+margin-top: 0pt;
+margin-right: 0pt;
+margin-bottom: 0pt;
+margin-left: 0pt;
+padding-top: 0pt;
+padding-right: 0pt;
+padding-bottom: 0pt;
+padding-left: 0pt;
+}
+
+.z-combobox-rounded .z-combobox-rounded-btn, .z-bandbox-rounded .z-bandbox-rounded-btn, .z-timebox-rounded .z-timebox-rounded-btn, .z-spinner-rounded .z-spinner-rounded-btn, .z-doublespinner-rounded .z-doublespinner-rounded-btn, .z-combobox .z-combobox-btn, .z-bandbox .z-bandbox-btn, .z-datebox .z-datebox-btn, .z-timebox .z-timebox-btn, .z-spinner .z-spinner-btn, .z-doublespinner .z-doublespinner-btn {
+background-color: transparent;
+background-repeat: no-repeat;
+background-attachment: scroll;
+background-position: 0px 0px;
+background-clip: border-box;
+background-origin: border-box;
+background-size: auto auto;
+background-image:url(images/comboboxflecha.png);
+vertical-align: top;
+cursor: pointer;
+width: 24px;
+height: 24px;
+border-top-width: 0pt;
+border-right-width-value: 0pt;
+border-right-width-ltr-source: physical;
+border-right-width-rtl-source: physical;
+border-left-width-value: 0pt;
+border-left-width-ltr-source: physical;
+border-left-width-rtl-source: physical;
+border-top-style: none;
+border-right-style-value: none;
+border-right-style-ltr-source: physical;
+border-right-style-rtl-source: physical;
+border-left-style-value: none;
+border-left-style-ltr-source: physical;
+border-left-style-rtl-source: physical;
+border-top-color: -moz-use-text-color;
+border-right-color-value: -moz-use-text-color;
+border-right-color-ltr-source: physical;
+border-right-color-rtl-source: physical;
+border-left-color-value: -moz-use-text-color;
+border-left-color-ltr-source: physical;
+border-left-color-rtl-source: physical;
+border-bottom-width: 1px;
+border-bottom-style: solid;
+border-bottom-color: #cccccc;
+overflow-x: hidden;
+overflow-y: hidden;
+display: inline-block;
+border-top-left-radius: 0pt;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+border-bottom-left-radius: 0pt;
+}
+
+.z-combobox-rounded .z-combobox-rounded-btn, .z-bandbox-rounded .z-bandbox-rounded-btn, .z-datebox-rounded .z-datebox-rounded-btn, .z-timebox-rounded .z-timebox-rounded-btn, .z-spinner-rounded .z-spinner-rounded-btn, .z-doublespinner-rounded .z-doublespinner-rounded-btn {
+border-top-width: 0pt;
+border-right-width-value: 0pt;
+border-right-width-ltr-source: physical;
+border-right-width-rtl-source: physical;
+border-bottom-width: 0pt;
+border-left-width-value: 0pt;
+border-left-width-ltr-source: physical;
+border-left-width-rtl-source: physical;
+border-top-style: none;
+border-right-style-value: none;
+border-right-style-ltr-source: physical;
+border-right-style-rtl-source: physical;
+border-bottom-style: none;
+border-left-style-value: none;
+border-left-style-ltr-source: physical;
+border-left-style-rtl-source: physical;
+border-top-color: -moz-use-text-color;
+border-right-color-value: -moz-use-text-color;
+border-right-color-ltr-source: physical;
+border-right-color-rtl-source: physical;
+border-bottom-color: -moz-use-text-color;
+border-left-color-value: -moz-use-text-color;
+border-left-color-ltr-source: physical;
+border-left-color-rtl-source: physical;
+width: 24px;
+height: 24px;
+background-position: 0px 0px;
+}
+
+.z-combobox-rounded .z-combobox-rounded-btn {
+background-image: url(images/comboboxflecha.png);
+}
+
+.z-combobox-rounded .z-combobox-rounded-btn-over, .z-bandbox-rounded .z-bandbox-rounded-btn-over, .z-datebox-rounded .z-datebox-rounded-btn-over, .z-timebox-rounded .z-timebox-rounded-btn-over, .z-spinner-rounded .z-spinner-rounded-btn-over, .z-doublespinner-rounded .z-doublespinner-rounded-btn-over{
+background-position: 0px 0px;
+}
+.z-combobox-rounded-focus .z-combobox-rounded-btn-clk, .z-combobox-rounded .z-combobox-rounded-btn-clk,
+.z-bandbox-rounded-focus .z-bandbox-rounded-btn-clk, .z-bandbox-rounded .z-bandbox-rounded-btn-clk,
+.z-datebox-rounded-focus .z-datebox-rounded-btn-clk, .z-datebox-rounded .z-datebox-rounded-btn-clk,
+.z-timebox-rounded-focus .z-timebox-rounded-btn-clk, .z-timebox-rounded .z-timebox-rounded-btn-clk,
+.z-spinner-rounded-focus .z-spinner-rounded-btn-clk, .z-spinner-rounded .z-spinner-rounded-btn-clk,
+.z-doublespinner-rounded-focus .z-doublespinner-rounded-btn-clk, .z-doublespinner-rounded .z-doublespinner-rounded-btn-clk {
+	background-position: 0 0px !important;
+}
+.z-datebox-rounded .z-datebox-rounded-btn {
+	background-color: transparent;
+background-repeat: no-repeat;
+background-attachment: scroll;
+background-position: 0px 0px;
+background-clip: border-box;
+background-origin: border-box;
+background-size: auto auto;
+background-image:url(images/dateboxo.png);
+vertical-align: top;
+cursor: pointer;
+width: 24px;
+height: 24px;
+border-top-width: 0pt;
+border-right-width-value: 0pt;
+border-right-width-ltr-source: physical;
+border-right-width-rtl-source: physical;
+border-left-width-value: 0pt;
+border-left-width-ltr-source: physical;
+border-left-width-rtl-source: physical;
+border-top-style: none;
+border-right-style-value: none;
+border-right-style-ltr-source: physical;
+border-right-style-rtl-source: physical;
+border-left-style-value: none;
+border-left-style-ltr-source: physical;
+border-left-style-rtl-source: physical;
+border-top-color: -moz-use-text-color;
+border-right-color-value: -moz-use-text-color;
+border-right-color-ltr-source: physical;
+border-right-color-rtl-source: physical;
+border-left-color-value: -moz-use-text-color;
+border-left-color-ltr-source: physical;
+border-left-color-rtl-source: physical;
+border-bottom-width: 1px;
+border-bottom-style: solid;
+border-bottom-color: #cccccc;
+overflow-x: hidden;
+overflow-y: hidden;
+display: inline-block;
+border-top-left-radius: 0pt;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+border-bottom-left-radius: 0pt;
+}
+.z-spinner-rounded-disd,
+.z-doublespinner-rounded-disd,
+.z-timebox-rounded-disd,
+.z-datebox-rounded-disd,
+.z-bandbox-rounded-disd,
+.z-combobox-rounded-disd,
+.z-spinner-disd,
+.z-doublespinner-disd,
+.z-timebox-disd,
+.z-datebox-disd,
+.z-bandbox-disd,
+.z-comboitem-disd,
+.z-combobox-disd {
+	opacity: 1;
+	-moz-opacity: 1;
+	filter: alpha(opacity=100);
+}
+.z-spinner-rounded-disd, .z-spinner-rounded-disd *,
+.z-doublespinner-rounded-disd, .z-doublespinner-rounded-disd *,
+.z-timebox-rounded-disd, .z-timebox-rounded-disd *,
+.z-datebox-rounded-disd, .z-datebox-rounded-disd *,
+.z-bandbox-rounded-disd, .z-bandbox-rounded-disd *,
+.z-combobox-rounded-disd {
+	cursor: default !important;
+	color: #000000 !important;
+
+}

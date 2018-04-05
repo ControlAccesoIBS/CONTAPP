@@ -1,0 +1,38 @@
+
+
+div.z-tree-header, div.z-tree-header tr, div.z-tree-footer {
+	border: 0; width: 100%;color : #58595b;
+	background: #1757A0;
+}
+div.z-tree-header,  div.z-tree-footer{
+	overflow: hidden;
+}
+div.z-tree-header tr.z-treehead, div.z-tree-header tr.z-auxhead {
+	background: #0e3d6a;
+	background-image: none;
+}
+
+div.z-treefooter-cnt{
+	border: 0; margin: 0; padding: 0;
+	font-family: arial;
+	font-size:12px;
+	font-weight:bold;
+	color : #58595b;
+	}
+
+
+div.z-treecell-cnt {
+	border: 0; margin: 0; padding: 0;
+	font-family: arial;
+	font-size:12px;
+	font-weight:normal;
+	color : #58595b;
+}
+
+
+td.z-treegroupfoot-inner div.z-treecell-cnt {
+	color: #2C559C;
+	font-weight: bold;
+	font-size: ${fontSizeM};
+	font-family: ${fontFamilyT};
+}

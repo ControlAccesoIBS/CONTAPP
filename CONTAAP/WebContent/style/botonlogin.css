@@ -1,0 +1,73 @@
+.z-button.boton_login .z-button-cm{
+	font-family : arial; 
+	color : #000000; 
+	font-size : 12px;
+	font-weight:bold; 
+	background-color : #ffffff; 
+	background-image : none; 
+	background-position : center center;
+	background-repeat : repeat; 
+}
+
+.z-button.boton_login .z-button-tl{
+	background-color : none; 
+	background-image : url(images/tl.jpg); 
+	background-position : top left;
+	width:7px;
+	height:7px;
+}
+
+.z-button.boton_login .z-button-tm{
+	background-color : none; 
+	background-image : url(images/tm.jpg); 
+	background-position : top center;
+	background-repeat : repeat; 
+	height:7px;
+}
+
+.z-button.boton_login .z-button-tr{
+	background-color : none; 
+	background-image : url(images/tr.jpg); 
+	background-position : top right;
+	width:10px;
+	height:7px;
+}
+
+.z-button.boton_login .z-button-cl{
+	background-color : none; 
+	background-image : url(images/cl.jpg); 
+	background-position : center left;
+	background-repeat : repeat-y; 
+	width:7px;
+
+}
+
+.z-button.boton_login .z-button-cr{
+	background-color : none; 
+	background-image : url(images/cr.jpg); 
+	background-position : center right;
+	background-repeat : repeat-y; 
+}
+
+.z-button.boton_login .z-button-bl{
+	background-color : none; 
+	background-image : url(images/bl.jpg); 
+	background-position : bottom left;
+	width:7px;
+	height:10px;
+}
+
+.z-button.boton_login .z-button-bm{
+	background-color : none; 
+	background-image : url(images/bm.jpg); 
+	background-position : bottom center;
+	background-repeat : repeat-x; 
+	width:10px;
+	height:10px;
+}
+
+.z-button.boton_login .z-button-br{
+	background-color : none; 
+	background-image : url(images/br.jpg); 
+	background-position : bottom right;
+}

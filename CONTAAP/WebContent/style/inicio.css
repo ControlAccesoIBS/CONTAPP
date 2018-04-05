@@ -1,0 +1,121 @@
+.aviso {
+	width: 1100px;
+	margin: auto;
+	min-height: 90px;
+}
+.aviso-dias{
+	width:34px;
+	height: 44px;
+	background-color:transparent;
+	position:absolute;
+	margin-left:-820px;
+	margin-top:0px;
+}
+.imageninicio {
+	width: 1100px;
+	margin: auto;
+
+}
+
+.ligas {
+	width: 56px;
+	margin: auto;
+	min-height: 26px;
+}
+.links{
+	margin-left: 20px;
+	width: 200px;
+}
+.divNoticia {
+	width: 1140px;
+	margin: auto;
+	height: 50px;
+}
+
+.line {
+	width: 1100px;
+	margin: auto;
+	background-image: none;
+}
+
+.infohead {
+	width: 1192px;
+	margin: auto;
+	height: 23px;
+	background-image: url(images/infohead.jpg);
+	background-repeat:no-repeat;
+}
+
+.infobody {
+	width: 1192px;
+	margin: auto;
+	height: 70px;
+	background-image: url(images/infobody.jpg);
+}
+
+.infofooter {
+	width: 1192px;
+	margin: auto;
+	height: 30px;
+	background-image: url(images/infofooter.jpg);
+	background-repeat:no-repeat;
+}
+
+.bienvenida {
+	font-family: arial;
+	font-size:14px;
+	font-weight:bold;
+	color: #e65032;
+	width: 200px;
+	margin-top:-450px;	
+}
+	
+.bono {
+	width: 180px;
+	height: 143px;
+	margin-left: 848px;
+}
+.z-a {
+	font-family: arial;
+	font-size:12px;
+	text-decoration:none;
+	color:#003366;
+	font-weight:bold;
+}
+.z-a2 {
+	font-family: arial;
+	font-size:10px;
+	text-decoration:none;
+	color:#000000;
+	font-weight:bold;
+}
+.z-a-disd {
+	color:#003366!important; cursor: default!important;
+	text-decoration: none !important;
+	font-weight:bold;
+}
+.z-a-disd:visited, .z-a-disd:hover {
+	text-decoration: none !important; cursor: default !important;
+}
+
+
+.noticia{
+	color : #ffffff; 
+	font-family: arial;
+}
+.guiarapida{
+width:200px;
+}
+.cambiopwd{
+width:100px;
+}
+.salir{
+width:100px;
+}
+
+.contenedorbanner{
+margin:auto;
+
+width:1100px;
+text-align:center;
+}

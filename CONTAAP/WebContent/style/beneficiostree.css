@@ -1,0 +1,359 @@
+div.z-tree.beneficiostree {
+	background: #FFFFFF;
+	overflow: hidden; 
+	zoom: 0;
+	border: 0px solid #CFCFCF;
+	background-image: none;
+}
+.beneficiostree .z-tree-pgi-t .z-paging-info, .beneficiostree .z-tree-pgi-t .z-paging-text, .beneficiostree .z-tree-pgi-t .z-paging-inp
+	, .beneficiostree .z-dottree-pgi-t .z-paging-info, .beneficiostree .z-dottree-pgi-t .z-paging-text, .beneficiostree .z-dottree-pgi-t .z-paging-inp
+	, .beneficiostree .z-filetree-pgi-t .z-paging-info, .beneficiostree .z-filetree-pgi-t .z-paging-text, .beneficiostree .z-filetree-pgi-t .z-paging-inp
+	, .beneficiostree .z-vfiletree-pgi-t .z-paging-info, .beneficiostree .z-vfiletree-pgi-t .z-paging-text, .beneficiostree .z-vfiletree-pgi-t .z-paging-inp
+{
+	font-family : arial;  
+	color : #ffffff;  
+	font-size : 12px;  
+	height : auto;
+}
+	
+
+	.beneficiostree .z-tree-pgi-t .z-paging
+	, .beneficiostree .z-dottree-pgi-t .z-paging
+	, .beneficiostree .z-filetree-pgi-t .z-paging
+	, .beneficiostree .z-vfiletree-pgi-t .z-paging
+{
+	background-color :#C5E7FA;  
+	background-image : none;  
+	background-position : 0px 0px;
+	border-style : none;  
+}
+	
+
+.beneficiostree .z-paging .z-paging-sep {
+	background-image : url(images/division.jpg) !important;  
+	background-position : 0px 0px;
+}
+	
+
+	.beneficiostree .z-tree-pgi-t .z-paging-os-cnt , .beneficiostree .z-tree-pgi-t .z-paging-os span
+	, .beneficiostree .z-dottree-pgi-t .z-paging-os-cnt , .beneficiostree .z-dottree-pgi-t .z-paging-os span
+	, .beneficiostree .z-filetree-pgi-t .z-paging-os-cnt, .beneficiostree .z-filetree-pgi-t .z-paging-os span
+	, .beneficiostree .z-vfiletree-pgi-t .z-paging-os-cnt , .beneficiostree .z-vfiletree-pgi-t .z-paging-os span
+{
+	font-family : arial;  
+	color : #e75133;
+	font-size : 12px;  
+}
+	
+
+	.beneficiostree .z-tree-pgi-t .z-paging-os
+	, .beneficiostree .z-dottree-pgi-t .z-paging-os
+	, .beneficiostree .z-filetree-pgi-t .z-paging-os
+	, .beneficiostree .z-vfiletree-pgi-t .z-paging-os
+{
+	background-color : #4c2f92;  
+	background-image : none;  
+	background-position : 0px 0px;
+	border-style : none;  
+}
+	
+
+	.beneficiostree .z-tree-pgi-t .z-paging-os-cnt
+	, .beneficiostree .z-dottree-pgi-t .z-paging-os-cnt
+	, .beneficiostree .z-filetree-pgi-t .z-paging-os-cnt
+	, .beneficiostree .z-vfiletree-pgi-t .z-paging-os-cnt
+{
+	background-color : #C5E7FA;  
+	background-image : none;  
+	background-position : 0px 0px;
+}
+	
+
+	.beneficiostree .z-tree-header .z-tree-cols .z-tree-col-cnt
+	, .beneficiostree .z-tree-header .z-treecols .z-treecol-cnt
+	, .beneficiostree .z-dottree-header .z-tree-cols .z-tree-col-cnt
+	, .beneficiostree .z-dottree-header .z-treecols .z-treecol-cnt
+	, .beneficiostree .z-filetree-header .z-tree-cols .z-tree-col-cnt
+	, .beneficiostree .z-filetree-header .z-treecols .z-treecol-cnt
+	, .beneficiostree .z-vfiletree-header .z-tree-cols .z-tree-col-cnt
+	, .beneficiostree .z-vfiletree-header .z-treecols .z-treecol-cnt
+{
+	font-family : arial;  
+	color :#e75133;
+	font-size : 12px;  
+}
+	
+
+	.beneficiostree .z-tree-header .z-tree-cols
+	, .beneficiostree .z-tree-header .z-treecols
+	, .beneficiostree .z-dottree-header .z-tree-cols
+	, .beneficiostree .z-dottree-header .z-treecols
+	, .beneficiostree .z-filetree-header .z-tree-cols
+	, .beneficiostree .z-filetree-header .z-treecols
+	, .beneficiostree .z-vfiletree-header .z-tree-cols
+	, .beneficiostree .z-vfiletree-header .z-treecols
+{
+	background-color :#C5E7FA;  
+	background-image : none;  
+	background-position : 0px 0px;
+}
+	
+
+	.beneficiostree .z-tree-body .z-tree-cell-cnt
+	,     .beneficiostree .z-tree-body .z-treecell-cnt
+	, .beneficiostree .z-dottree-body .z-tree-cell-cnt
+	, .beneficiostree .z-dottree-body .z-treecell-cnt
+	, .beneficiostree .z-filetree-body .z-tree-cell-cnt
+	, .beneficiostree .z-filetree-body .z-treecell-cnt
+	, .beneficiostree .z-vfiletree-body .z-tree-cell-cnt
+	, .beneficiostree .z-vfiletree-body .z-treecell-cnt
+{
+	font-family : arial;  
+	color :#58595b;
+	font-size : 12px;  
+}
+	
+
+	.beneficiostree .z-tree-body table
+	, .beneficiostree .z-dottree-body table
+	, .beneficiostree .z-filetree-body table
+	, .beneficiostree .z-vfiletree-body table
+{
+	background-color : #ffffff;  
+	background-image : none;  
+	background-position : 0px 0px;
+	border-style : none;  
+}
+	
+
+	.beneficiostree .z-tree-body .z-tree-row-seld .z-tree-cell-cnt
+	, .beneficiostree .z-tree-body .z-treerow-seld .z-treecell-cnt
+	, .beneficiostree .z-dottree-body .z-tree-row-seld .z-tree-cell-cnt
+	, .beneficiostree .z-dottree-body .z-treerow-seld .z-treecell-cnt
+	, .beneficiostree .z-filetree-body .z-tree-row-seld .z-tree-cell-cnt
+	, .beneficiostree .z-filetree-body .z-treerow-seld .z-treecell-cnt
+	, .beneficiostree .z-vfiletree-body .z-tree-row-seld .z-tree-cell-cnt
+	, .beneficiostree .z-vfiletree-body .z-treerow-seld .z-treecell-cnt
+{
+	font-family : arial;  
+	color : #58595b;  
+	font-size : 12px;  
+}
+	
+
+	.beneficiostree .z-tree-body .z-tree-row-seld
+	, .beneficiostree .z-tree-body .z-treerow-seld
+	, .beneficiostree .z-dottree-body .z-tree-row-seld
+	, .beneficiostree .z-dottree-body .z-treerow-seld
+	, .beneficiostree .z-filetree-body .z-tree-row-seld
+	, .beneficiostree .z-filetree-body .z-treerow-seld
+	, .beneficiostree .z-vfiletree-body .z-tree-row-seld
+	, .beneficiostree .z-vfiletree-body .z-treerow-seld
+{
+	background-color : #C5E7FA;  
+	background-image : none;  
+	background-position : 0px 0px;
+}
+	
+
+	.beneficiostree .z-tree-body .z-tree-row-over .z-tree-cell-cnt
+	, .beneficiostree .z-tree-body .z-treerow-over .z-treecell-cnt
+	, .beneficiostree .z-dottree-body .z-tree-row-over .z-tree-cell-cnt
+	, .beneficiostree .z-dottree-body .z-treerow-over .z-treecell-cnt
+	, .beneficiostree .z-filetree-body .z-tree-row-over .z-tree-cell-cnt
+	, .beneficiostree .z-filetree-body .z-treerow-over .z-treecell-cnt
+	, .beneficiostree .z-vfiletree-body .z-tree-row-over .z-tree-cell-cnt
+	, .beneficiostree .z-vfiletree-body .z-treerow-over .z-treecell-cnt
+{
+	font-family : arial;  
+	color : #58595b;  
+	font-size : 12px;  
+}
+	
+
+	.beneficiostree .z-tree-body .z-tree-row-over
+	, .beneficiostree .z-tree-body .z-treerow-over
+	, .beneficiostree .z-dottree-body .z-tree-row-over
+	, .beneficiostree .z-dottree-body .z-treerow-over
+	, .beneficiostree .z-filetree-body .z-tree-row-over
+	, .beneficiostree .z-filetree-body .z-treerow-over
+	, .beneficiostree .z-vfiletree-body .z-tree-row-over
+	, .beneficiostree .z-vfiletree-body .z-treerow-over
+{
+	background-color : #C5E7FA;  
+	background-image : none;  
+	background-position : 0px 0px;
+}
+	
+
+	.beneficiostree .z-tree-body .z-tree-row-disd .z-tree-cell-cnt
+	, .beneficiostree .z-tree-body .z-treerow-disd .z-treecell-cnt
+	, .beneficiostree .z-dottree-body .z-tree-row-disd .z-tree-cell-cnt
+	, .beneficiostree .z-dottree-body .z-treerow-disd .z-treecell-cnt
+	, .beneficiostree .z-filetree-body .z-tree-row-disd .z-tree-cell-cnt
+	, .beneficiostree .z-filetree-body .z-treerow-disd .z-treecell-cnt
+	, .beneficiostree .z-vfiletree-body .z-tree-row-disd .z-tree-cell-cnt
+	, .beneficiostree .z-vfiletree-body .z-treerow-disd .z-treecell-cnt
+{
+	font-family : arial;  
+	font-size : 12px;  
+}
+	
+
+	.beneficiostree .z-tree-body .z-tree-row-disd
+	, .beneficiostree .z-tree-body .z-treerow-disd
+	, .beneficiostree .z-dottree-body .z-tree-row-disd
+	, .beneficiostree .z-dottree-body .z-treerow-disd
+	, .beneficiostree .z-filetree-body .z-tree-row-disd
+	, .beneficiostree .z-filetree-body .z-treerow-disd
+	, .beneficiostree .z-vfiletree-body .z-tree-row-disd
+	, .beneficiostree .z-vfiletree-body .z-treerow-disd
+{
+	background-color :#C5E7FA;  
+	background-image : none;  
+	background-position : 0px 0px;
+}
+	
+
+	.beneficiostree .z-tree-body .z-tree-row-over-seld .z-tree-cell-cnt
+	, .beneficiostree .z-tree-body .z-treerow-over-seld .z-treecell-cnt
+	, .beneficiostree .z-dottree-body .z-tree-row-over-seld .z-tree-cell-cnt
+	, .beneficiostree .z-dottree-body .z-treerow-over-seld .z-treecell-cnt
+	, .beneficiostree .z-filetree-body .z-tree-row-over-seld .z-tree-cell-cnt
+	, .beneficiostree .z-filetree-body .z-treerow-over-seld .z-treecell-cnt
+	, .beneficiostree .z-vfiletree-body .z-tree-row-over-seld .z-tree-cell-cnt
+	, .beneficiostree .z-vfiletree-body .z-treerow-over-seld .z-treecell-cnt
+{
+	font-family : arial;  
+	color : #ffffff;  
+	font-size : 12px;  
+}
+	
+
+	.beneficiostree .z-tree-body .z-tree-row-over-seld
+	, .beneficiostree .z-tree-body .z-treerow-over-seld
+	, .beneficiostree .z-dottree-body .z-tree-row-over-seld
+	, .beneficiostree .z-dottree-body .z-treerow-over-seld
+	, .beneficiostree .z-filetree-body .z-tree-row-over-seld
+	, .beneficiostree .z-filetree-body .z-treerow-over-seld
+	, .beneficiostree .z-vfiletree-body .z-tree-row-over-seld
+	, .beneficiostree .z-vfiletree-body .z-treerow-over-seld
+{
+	background-color :#C5E7FA;  
+	background-image : none;  
+	background-position : 0px 0px;
+}
+	
+
+	.beneficiostree .z-tree-body .z-tree-row-focus .z-tree-cell-cnt
+	, .beneficiostree .z-tree-body .z-treerow-focus .z-treecell-cnt
+	, .beneficiostree .z-dottree-body .z-tree-row-focus .z-tree-cell-cnt
+	, .beneficiostree .z-dottree-body .z-treerow-focus .z-treecell-cnt
+	, .beneficiostree .z-filetree-body .z-tree-row-focus .z-tree-cell-cnt
+	, .beneficiostree .z-filetree-body .z-treerow-focus .z-treecell-cnt
+	, .beneficiostree .z-vfiletree-body .z-tree-row-focus .z-tree-cell-cnt
+	, .beneficiostree .z-vfiletree-body .z-treerow-focus .z-treecell-cnt
+{
+	font-family : arial;  
+	color : #58595b;  
+	font-size : 12px;  
+}
+	
+
+	.beneficiostree .z-tree-body .z-tree-row-focus
+	, .beneficiostree .z-tree-body .z-treerow-focus
+	, .beneficiostree .z-dottree-body .z-tree-row-focus
+	, .beneficiostree .z-dottree-body .z-treerow-focus
+	, .beneficiostree .z-filetree-body .z-tree-row-focus
+	, .beneficiostree .z-filetree-body .z-treerow-focus
+	, .beneficiostree .z-vfiletree-body .z-tree-row-focus
+	, .beneficiostree .z-vfiletree-body .z-treerow-focus
+{
+	background-color :#C5E7FA;  
+	background-image : none;  
+	background-position : 0px 0px;
+}
+	
+
+	.beneficiostree div.z-tree-footer .z-label
+	, .beneficiostree div.z-treefooter .z-label
+	, .beneficiostree div.z-dottree-footer .z-label
+	, .beneficiostree div.z-filetree-footer .z-label
+	, .beneficiostree div.z-vfiletree-footer .z-label
+{
+	font-family : arial;  
+	color : #ffffff;  
+	font-size : 12px;  
+}
+	
+
+	.beneficiostree div.z-tree-footer
+	, .beneficiostree div.z-treefooter
+	, .beneficiostree div.z-dottree-footer
+	, .beneficiostree div.z-filetree-footer
+	, .beneficiostree div.z-vfiletree-footer
+{
+	background-color : #7f3f98;  
+	background-image : none;  
+	background-position : 0px 0px;
+}
+	
+
+	.beneficiostree .z-tree-pgi-b .z-paging-info, .beneficiostree .z-tree-pgi-b .z-paging-text, .beneficiostree .z-tree-pgi-b .z-paging-inp
+	, .beneficiostree .z-dottree-pgi-b .z-paging-info, .beneficiostree .z-dottree-pgi-b .z-paging-text, .beneficiostree .z-dottree-pgi-b .z-paging-inp
+	, .beneficiostree .z-filetree-pgi-b .z-paging-info, .beneficiostree .z-filetree-pgi-b .z-paging-text, .beneficiostree .z-filetree-pgi-b .z-paging-inp
+	, .beneficiostree .z-vfiletree-pgi-b .z-paging-info, .beneficiostree .z-vfiletree-pgi-b .z-paging-text, .beneficiostree .z-vfiletree-pgi-b .z-paging-inp
+{
+	font-family : arial;  
+	height : auto;
+	color : #ffffff;  
+	height : auto;
+	font-size : 12px;  
+	height : auto;
+}
+	
+
+	.beneficiostree .z-tree-pgi-b .z-paging
+	, .beneficiostree .z-dottree-pgi-b .z-paging
+	, .beneficiostree .z-filetree-pgi-b .z-paging
+	, .beneficiostree .z-vfiletree-pgi-b .z-paging
+{
+	background-color : #58595b;  
+	background-image : none;  
+	background-position : 0px 0px;
+	border-style : none;  
+}
+	
+
+	.beneficiostree .z-tree-pgi-b .z-paging-os-cnt , .beneficiostree .z-tree-pgi-b .z-paging-os span
+	, .beneficiostree .z-dottree-pgi-b .z-paging-os-cnt , .beneficiostree .z-dottree-pgi-b .z-paging-os span
+	, .beneficiostree .z-filetree-pgi-b .z-paging-os-cnt, .beneficiostree .z-filetree-pgi-b .z-paging-os span
+	, .beneficiostree .z-vfiletree-pgi-b .z-paging-os-cnt , .beneficiostree .z-vfiletree-pgi-b .z-paging-os span
+{
+	font-family : arial;  
+	color : #58595b;  
+	font-size : 12px;  
+}
+	
+
+	.beneficiostree .z-tree-pgi-b .z-paging-os
+	, .beneficiostree .z-dottree-pgi-b .z-paging-os
+	, .beneficiostree .z-filetree-pgi-b .z-paging-os
+	, .beneficiostree .z-vfiletree-pgi-b .z-paging-os
+{
+	background-color : #58595b;  
+	background-image : none;  
+	background-position : 0px 0px;
+	border-style : none;  
+}
+	
+
+	.beneficiostree .z-tree-pgi-b .z-paging-os-cnt
+	, .beneficiostree .z-dottree-pgi-b .z-paging-os-cnt
+	, .beneficiostree .z-filetree-pgi-b .z-paging-os-cnt
+	, .beneficiostree .z-vfiletree-pgi-b .z-paging-os-cnt
+{
+	background-color : #C5E7FA;  
+	background-image : none;  
+	background-position : 0px 0px;
+}
