@@ -20,10 +20,7 @@
 			value="Para restablecer la contraseña, favor de introducir el correo con el que se registro">
 		</label>
 	</div>
-	<div apply="org.zkoss.bind.BindComposer"
-		viewModel="@id('vm') @init('com.codigoRC.FormViewModel')"
-		validationMessages="@id('vmsgs')"
-		form="@id('fx') @validator('com.codigoRC.FormValidator',c_password=vm.c_password, captcha=vm.captcha, captchaInput=vm.captchaInput)">
+	<window apply="com.codigoRC.ValidarPass">
 		<div sclass="container-fluid py-3">
 
 			<div sclass="container-fluid py-3">
@@ -32,7 +29,7 @@
 						<div sclass="col-md-12 text-left">
 							<label value="NUEVA CONTRASEÑA"></label>
 							<separator></separator>
-							<textbox id="NUEVA_PASSW" value="@bind(fx.password)"
+							<textbox id="NUEVA_PASSW" value=""
 								sclass="form-control" constraint="no empty" type="password" />
 						</div>
 					</div>
@@ -45,45 +42,23 @@
 						<div sclass="col-md-12 text-left">
 							<label value="CONFIRMAR CONTRASEÑA"></label>
 							<separator></separator>
-							<textbox id="CONFIRMAR_PASSW" value="@bind(fx.c_password)"
+							<textbox id="CONFIRMAR_PASSW" value=""
 								sclass="form-control" constraint="no empty" type="password" />
 						</div>
 					</div>
 				</div>
 			</div>
-			<div sclass="container-fluid">
-				<div sclass="container">
-					<vlayout>
-						<hlayout>
-							<textbox value="@bind(vm.captchaInput)"
-								width="150px" tabindex="12" />
-							<label class="error"
-								value="@load(vmsgs['captcha'])" />
-						</hlayout>
-						<hlayout>
-							<captcha value="@load(vm.captcha)"
-								width="150px"
-								height="50px" frame="true" />
-							<vlayout>
-								<button label="Regenerate"
-									onClick="@command('regenerate')" width="100px" />
-							</vlayout>
-						</hlayout>
-					</vlayout>
-
-				</div>
-			</div>
-
-
 			<div sclass="text-center py-5">
 				<button sclass="z-botton z-button-cm" type="submit"
-					id="ENVIAR" label="ENVIAR" onClick="@command('submit')">
+					id="ENVIAR" label="ENVIAR">
 				</button>
 				<button sclass="z-botton z-button-cm" id="Eliminar"
 					label="CANCELAR">
 				</button>
 			</div>
 		</div>
-	</div>
+	</window>
+	
+	
 
 </zk>
