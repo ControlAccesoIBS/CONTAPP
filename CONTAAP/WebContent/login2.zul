@@ -19,7 +19,7 @@
 				<combobox id="ID_APP" 
 					constraint="no empty"/>
 			</div>
-		</div>
+		</div> 
 		
 		<div sclass="container text-center col-md-5">
 			<div sclass="text-left">
