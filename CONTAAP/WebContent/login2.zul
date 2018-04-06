@@ -4,33 +4,26 @@
 <?script type="text/javascript" src="js/jquery-1.12.1.js"?>
 <zk>
 
+<div sclass="py-3"></div>
+<panel><panelchildren>
+
+	<div style="background-color:#bfe2ed" width="800px" height="500px"  sclass="container text-center py-3">
+
 	<div sclass="text-center py-3">
 		<separator></separator>
-		<label value="Login" sclass="h2"></label>
+		<label value="Acceso a Usuario" sclass="h2"></label>
 	</div>
-
-	<div sclass="container text-center py-5">
-
-
-		<div sclass="container text-center col-md-5">
+	
+		<div sclass="container  text-center col-md-5">
 			<div sclass="text-left ">
-				<label value="SISTEMA"></label>
-				<separator></separator>
-				<combobox id="ID_APP" 
-					constraint="no empty"/>
-			</div>
-		</div> 
-		
-		<div sclass="container text-center col-md-5">
-			<div sclass="text-left">
 				<label value="COMPAÑIA"></label>
 				<separator></separator>
-				<combobox id="ID_COMPANIA" 
-					constraint="no empty"/>
+				<textbox id="ID_COMPANIA" 
+					constraint="no empty" sclass="form-control"/>
 			</div>
 		</div>
 		
-		<div sclass="container text-center col-md-5">
+		<div sclass="container py-3 text-center col-md-5">
 			<div sclass="text-left">
 				<label value="USUARIO"></label>
 				<separator></separator>
@@ -39,7 +32,7 @@
 			</div>
 		</div>
 
-		<div sclass="text-right container col-md-5 py-1">
+		<div sclass="text-right container col-md-5">
 			<div>
 				<label value=" ¿Haz olvidado el usuario?"></label>
 			</div>
@@ -72,7 +65,6 @@
 				type="submit" id="REGISTRAR" label="REGISTRAR">
 			</button>
 		</div>
-
-
-	</div>
+</div>
+</panelchildren></panel>
 </zk>
