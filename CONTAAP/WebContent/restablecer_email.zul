@@ -1,0 +1,64 @@
+<?page title="Login" contentType="text/html;charset=UTF-8"?>
+<?link rel="stylesheet" type="text/css" href="style/boton.css"?>
+<?link rel="stylesheet" type="text/css" href="css/bootstrap.css"?>
+<?script type="text/javascript" src="js/jquery-1.12.1.js"?>
+<zk>
+
+	<div sclass="py-3"></div>
+	<panel>
+		<panelchildren>
+
+			<div sclass="container text-center py-3">
+
+				<div sclass="text-center py-3">
+					<label value="RESTABLECER USUARIO O EMAIL"
+						sclass="h2">
+					</label>
+				</div>
+
+		<div sclass="container  py-3 text-center col-md-5">
+					<div sclass="text-left">
+						<label
+							 value="Introduzca el email con el que se registro.">
+						</label>
+					</div>
+				</div>
+
+				<div sclass="container  py-1 text-center col-md-5">
+					<div sclass="text-left">
+						<label value="EMAIL"></label>
+						<separator></separator>
+						<textbox id="RESTABLECER_EMAIL"
+							constraint="no empty" sclass="form-control" />
+					</div>
+				</div>
+				
+				<div sclass="container  py-3 text-center col-md-5">
+					<div sclass="text-left">
+						<label
+							value="Introduzca su RFC para validar su cuenta de usuario">
+						</label>
+					</div>
+				</div>
+
+				<div sclass="container  py-1 text-center col-md-5">
+					<div sclass="text-left">
+						<label value="RFC"></label>
+						<separator></separator>
+						<textbox id="RFC_USUARIO"
+							constraint="no empty" sclass="form-control" />
+					</div>
+				</div>
+
+				
+
+				<div sclass="py-5 text-center container col-md-5">
+					<button style="background-color: #226eb3"
+						type="submit" id="SIGUIENTE" label="INICIAR SESIÓN">
+					</button>
+					
+				</div>
+			</div>
+		</panelchildren>
+	</panel>
+</zk>
