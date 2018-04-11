@@ -1,4 +1,4 @@
-<?page title="Login" contentType="text/html;charset=UTF-8"?>
+<?page title="Restablecer cuenta de usuario" contentType="text/html;charset=UTF-8"?>
 <?link rel="stylesheet" type="text/css" href="style/boton.css"?>
 <?link rel="stylesheet" type="text/css" href="css/bootstrap.css"?>
 <?script type="text/javascript" src="js/jquery-1.12.1.js"?>
@@ -36,7 +36,7 @@
 				<div sclass="container  py-3 text-center col-md-5">
 					<div sclass="text-left">
 						<label
-							value="Introduzca su RFC para validar su cuenta de usuario">
+							value="Introduzca el RFC para validar su cuenta de usuario">
 						</label>
 					</div>
 				</div>
@@ -53,8 +53,8 @@
 				
 
 				<div sclass="py-5 text-center container col-md-5">
-					<button style="background-color: #226eb3"
-						type="submit" id="SIGUIENTE" label="INICIAR SESIÓN">
+					<button style="background-color: #226eb3" sclass="btn-sm"
+						type="submit" id="SIGUIENTE" label="SIGUIENTE">
 					</button>
 					
 				</div>
