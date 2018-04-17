@@ -78,6 +78,17 @@
 				</div>
 			</div>
 		</div>
+		
+		<div sclass="container">
+			<div sclass="row text-center py-3">
+				<div sclass="col-md-5 text-left">
+					<label value="LIMITE DE AUTORIZACIÓN"></label>
+					<separator></separator>
+					<textbox id="LÍMITE_AUTORIZACION" sclass="text-left" />
+				</div>
+					</div>
+				</div>
+		
 
 		<div sclass="container">
 			<div sclass="row text-center py-3">
@@ -153,15 +164,10 @@
 						<comboitem label="I" />
 					</combobox>
 				</div>
-			</div>
-		</div>
-
-		<div sclass="container">
-			<div sclass="row text-center py-3">
 				<div sclass="col-md-5 text-left">
 					<label value="FECHA DE BLOQUEO"></label>
 					<separator></separator>
-					<datebox  id="DIA_BLOQUEO"  constraint="no empty, no today, no future"></datebox>
+					<datebox  id="FECHA_BLOQUEO"  constraint="no empty, no today, no future"></datebox>
 				</div>
 			</div>
 		</div>
