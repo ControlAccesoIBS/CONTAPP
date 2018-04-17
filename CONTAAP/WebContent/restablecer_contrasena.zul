@@ -1,5 +1,4 @@
 <?page title="Mantenimiento de usuario" contentType="text/html;charset=UTF-8"?>
-<?link rel="stylesheet" type="text/css" href="style/boton.css"?>
 <?link rel="stylesheet" type="text/css" href="css/bootstrap.css"?>
 <?script type="text/javascript" src="js/jquery-1.12.1.js"?>
 <!--  este es el script de recapcha de google -->
@@ -78,10 +77,12 @@
 
 
 			<div sclass="text-center py-5">
-				<button sclass="z-botton z-button-cm" type="submit"
+				<button style="background-color: #005588" sclass="btn-sm"
+						type="submit"
 					id="ENVIAR" label="ENVIAR" onClick="@command('submit')">
 				</button>
-				<button sclass="z-botton z-button-cm" id="Eliminar"
+				<button style="background-color: #005588" sclass="btn-sm"
+						type="submit" id="Eliminar"
 					label="CANCELAR">
 				</button>
 			</div>

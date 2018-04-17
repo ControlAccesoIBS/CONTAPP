@@ -1,5 +1,4 @@
 <?page title="Restablecer cuenta de usuario" contentType="text/html;charset=UTF-8"?>
-<?link rel="stylesheet" type="text/css" href="style/boton.css"?>
 <?link rel="stylesheet" type="text/css" href="css/bootstrap.css"?>
 <?script type="text/javascript" src="js/jquery-1.12.1.js"?>
 <zk>
@@ -53,7 +52,7 @@
 				
 
 				<div sclass="py-5 text-center container col-md-5">
-					<button style="background-color: #226eb3" sclass="btn-sm"
+					<button style="background-color: #005588" sclass="btn-sm"
 						type="submit" id="SIGUIENTE" label="SIGUIENTE">
 					</button>
 					

@@ -1,0 +1,26 @@
+<?page title="Confirmar cuenta de usuario" contentType="text/html;charset=UTF-8"?>
+<?link rel="stylesheet" type="text/css" href="css/bootstrap.css"?>
+<?script type="text/javascript" src="js/jquery-1.12.1.js"?>
+<zk>
+
+	<div sclass="py-3"></div>
+	<div style="background-color:#bfe2ed" width="850px" height="600px"
+		sclass="container text-center py-3">
+
+		<div sclass="text-center py-3">
+			<label value="APLICACIONES IBS" sclass="h2"></label>
+		</div>
+		<div>
+		<div style="border-radius:20px" sclass="col-md-6 col-md-4 col-xl-3 mb-3 ">
+			<a href="https://iconos8.es/icon/69334/almacenamiento-en-la-nube-privada"></a>
+			<toolbarbutton label="mosaico1"/>
+			<image sclass="img-thumbnail mb-3" src="img/CELULAR.png" width="960" height="600"/>	
+		</div>
+		
+		</div>
+
+
+
+
+	</div>
+</zk>

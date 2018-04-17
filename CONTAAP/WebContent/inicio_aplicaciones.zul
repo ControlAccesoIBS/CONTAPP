@@ -1,0 +1,55 @@
+<?page title="Inicio_aplicaciones" contentType="text/html;charset=UTF-8"?>
+<?link rel="stylesheet" type="text/css" href="css/bootstrap.css"?>
+<?script type="text/javascript" src="js/jquery-1.12.1.js"?>
+<zk>
+
+	<div sclass="py-3"></div>
+		<div style="background-color:#bfe2ed" width="850px" height="600px"
+			sclass="container text-center py-3">
+			
+			<div sclass="text-center py-3">
+					<label value="APLICACIONES IBS" sclass="h2"></label>
+				</div>
+	
+			
+	<div >
+    <portallayout id="portalLayout" maximizedMode="whole">
+     <portalchildren  width="180px">
+            <panel id="FACTEL" height="150px" title="FACTEL" border="normal" collapsible="true" closable="true" maximizable="true" style="margin-bottom:10px">
+                <panelchildren>
+                </panelchildren>
+            </panel>
+        
+            <panel id="PROSOL"  height="150px" title="PROSOL" border="normal" collapsible="true" closable="true" maximizable="true" style="margin-bottom:10px">
+                <panelchildren>
+                    <include  />
+                </panelchildren>
+            </panel>
+        </portalchildren>
+        
+ 
+        <portalchildren style="padding: 5px" width="180px">
+            <panel id="VIATICOS" height="150px" title="VIATICOS" border="normal" collapsible="true" closable="true" maximizable="true" style="margin-bottom:10px">
+                <panelchildren>
+                    <include />
+                </panelchildren>
+            </panel>
+            
+            <panel id="CONTE" height="150px" title="CONTE" border="normal" collapsible="true" closable="true" maximizable="true" style="margin-bottom:10px">
+                <panelchildren>
+                    <include />
+                </panelchildren>
+            </panel>
+        </portalchildren>
+ 
+        <portalchildren style="padding: 5px" width="180px">
+            <panel id="weather" height="150px" title="Weather" border="normal" collapsible="true" closable="true" maximizable="true" style="margin-bottom:10px">
+                <panelchildren>
+                    <include> </include>
+                </panelchildren>
+            </panel>
+        </portalchildren>
+    </portallayout>
+</div>
+		</div>
+</zk>

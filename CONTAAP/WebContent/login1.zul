@@ -1,5 +1,4 @@
 <?page title="Login" contentType="text/html;charset=UTF-8"?>
-<?link rel="stylesheet" type="text/css" href="style/boton.css"?>
 <?link rel="stylesheet" type="text/css" href="css/bootstrap.css"?>
 <?script type="text/javascript" src="js/jquery-1.12.1.js"?>
 <zk>
@@ -11,7 +10,7 @@
 
 	<div sclass="text-center py-3">
 		<separator></separator>
-		<label value="Acceso a Usuario" sclass="h2"></label>
+		<label value="INICIAR SESIÓN" sclass="h2"></label>
 	</div>
 	
 		<div sclass="container  py-3 text-center col-md-5">
@@ -58,11 +57,11 @@
 		</div>
 		
 		<div sclass="py-5 text-center container col-md-5">
-			<button sclass="z-button.boton_login z-button-cm"
-				type="submit" id="INICIO_SESION" label="INICIAR SESIÓN">
+			<button style="background-color: #005588" sclass="btn-sm"
+						type="submit" id="INICIO_SESION" label="INICIAR SESIÓN">
 				</button>
-			<button sclass="z-button.boton_login z-button-cm"
-				type="submit" id="REGISTRAR" label="REGISTRAR">
+			<button style="background-color: #005588" sclass="btn-sm"
+						type="submit" id="REGISTRAR" label="REGISTRAR">
 			</button>
 		</div>
 </div>

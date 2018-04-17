@@ -1,17 +1,17 @@
-<?page title="Registro de usuario" contentType="text/html;charset=UTF-8"?>
+<?page title="Mantenimiento de usuario" contentType="text/html;charset=UTF-8"?>
 <?link rel="stylesheet" type="text/css" href="css/bootstrap.css"?>
 <?script type="text/javascript" src="js/jquery-1.12.1.js"?>
 
 <zk>
 
-	<navbar orient="vertical">
-		<navitem label="FORMULARIO DE REGISTRO DE USUARIOS" />
+	<navbar orient="horizontal">
+		<navitem label="MANTENIMIENTO DE USUARIOS" />
 
 	</navbar>
 
 	<div sclass="container-fluid text-center py-3">
 		<separator></separator>
-		<label value="REGISTRO DE USUARIOS" sclass="h2"></label>
+		<label value="MANTENIMIENTO DE USUARIOS" sclass="h2"></label>
 	</div>
 	<div sclass="container-fluid py-3">
 		<div sclass="container">
@@ -54,7 +54,7 @@
 					<separator></separator>
 					<textbox id="TEL_CEL" sclass="text-left" />
 				</div>
-				<div sclass="col-md-3 text-left">
+				<div sclass="col-md-4 text-left">
 					<label value="TEL. OFICINA"></label>
 					<separator></separator>
 					<textbox id="TEL_OFICINA" sclass="text-left" />
@@ -87,6 +87,14 @@
 					<combobox id="TIPO_USUARIO">
 						<comboitem label="I" />
 						<comboitem label="E" />
+					</combobox>
+				</div>
+				<div sclass="col-md-5 text-left">
+					<label value="ESTATUS" />
+					<separator></separator>
+					<combobox id="ESTATUS">
+						<comboitem label="A" />
+						<comboitem label="I" />
 					</combobox>
 				</div>
 			</div>
@@ -135,12 +143,33 @@
 			</div>
 		</div>
 
+		<div sclass="container">
+			<div sclass="row text-center py-3">
+				<div sclass="col-md-5 text-left">
+					<label value="ESTATUS DE BLOQUEO" />
+					<separator></separator>
+					<combobox id="ESTATUS_BLOQUEO">
+						<comboitem label="A" />
+						<comboitem label="I" />
+					</combobox>
+				</div>
+			</div>
+		</div>
 
+		<div sclass="container">
+			<div sclass="row text-center py-3">
+				<div sclass="col-md-5 text-left">
+					<label value="FECHA DE BLOQUEO"></label>
+					<separator></separator>
+					<datebox  id="DIA_BLOQUEO"  constraint="no empty, no today, no future"></datebox>
+				</div>
+			</div>
+		</div>
 
 		<div sclass=" py-3 text-center">
 			<button style="background-color:#005588"  sclass="btn-sm"
 						type="submit"
-				id="Registrar" label="REGISTRAR">
+				id="Realizar_Cambios" label="REALIZAR CAMBIOS">
 			</button>
 			<button style="background-color:#005588" sclass="btn-sm"
 						type="submit" id="Editar"

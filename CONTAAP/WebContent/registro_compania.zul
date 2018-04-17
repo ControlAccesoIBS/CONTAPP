@@ -1,5 +1,4 @@
 <?page title="Registro de compañias" contentType="text/html;charset=UTF-8"?>
-<?link rel="stylesheet" type="text/css" href="style/boton.css"?>
 <?link rel="stylesheet" type="text/css" href="css/bootstrap.css"?>
 <?script type="text/javascript" src="js/jquery-1.12.1.js"?>
 
@@ -78,7 +77,7 @@
 					<textbox id="EMAIL_COMPANIA" sclass="form-control"
 						constraint="no empty" placeholder="Ejemplo: usuario1@ejemplo.com" />
 				</div>
-				<div sclass="col-md-5 text-left">
+				<div sclass=" col-md-3 text-left">
 					<label value="PASSWORD"></label>
 					<separator></separator>
 					<textbox id="PASW_EMAIL_COMPANIA" sclass="form-control"
@@ -218,13 +217,16 @@
 
 
 		<div sclass=" py-3 text-center">
-			<button sclass="z-botton z-button-cm" type="submit"
+			<button style="background-color: #005588" sclass="btn-sm"
+						type="submit"
 				id="Registrar" label="REGISTRAR">
 			</button>
-			<button sclass="z-botton z-button-cm" id="Editar"
+			<button style="background-color: #005588" sclass="btn-sm"
+						type="submit" id="Editar"
 				label="LIMPIAR FORMULARIO">
 			</button>
-			<button sclass="z-botton z-button-cm" id="Eliminar"
+			<button style="background-color: #005588" sclass="btn-sm"
+						type="submit" id="Eliminar"
 				label="CANCELAR">
 			</button>
 		</div>
