@@ -11,8 +11,8 @@
 	</navbar>
 
 	<div sclass="container-fluid text-center py-3">
-			<separator></separator>
-				<label value="REGISTRO DE COMPAÑIAS" sclass="h2"></label>
+		<separator></separator>
+		<label value="REGISTRO DE COMPAÑIAS" sclass="h2"></label>
 	</div>
 
 	<div sclass="container-fluid py-3">
@@ -21,8 +21,7 @@
 				<div sclass="col-md-12 text-left">
 					<label value="ID DE COMPAÑIA"></label>
 					<separator></separator>
-					<textbox id="ID_COMPANIA" sclass="form-control"
-						constraint="no empty" />
+					<textbox id="ID_COMPANIA" sclass="form-control" constraint="no empty" />
 				</div>
 			</div>
 		</div>
@@ -43,13 +42,12 @@
 				<div sclass="col-md-12 text-left">
 					<label value="NOMBRE"></label>
 					<separator></separator>
-					<textbox id="NOMBRE_COMP" 
-						sclass="form-control" constraint="no empty" />
+					<textbox id="NOMBRE_COMP" sclass="form-control" constraint="no empty" />
 				</div>
 			</div>
 		</div>
-		
-		
+
+
 		<div sclass="container">
 			<div sclass="row text-center">
 				<div sclass=" col-md-4 text-left">
@@ -129,18 +127,18 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div sclass="container">
 			<div sclass="row text-center py-3">
 				<div sclass="col-md-5 text-left">
 					<label value="CÓDIGO POSTAL"></label>
-						<separator></separator>
-						<textbox id="COD_POSTAL"  />
+					<separator></separator>
+					<textbox id="COD_POSTAL" />
 				</div>
 			</div>
 		</div>
-		
-	<div sclass="container">
+
+		<div sclass="container">
 			<div sclass="row text-center py-3">
 				<div sclass="col-md-5 text-left">
 					<label value="DESCRIPCIÓN"></label>
@@ -156,11 +154,14 @@
 				<div sclass=" text-left">
 					<label value="AUTORIZACIÓN"></label>
 					<separator></separator>
-					<combobox id="REQ_AUTORIZACIÓN" sclass="text-left" ><comboitem label="S"/><comboitem label="N"/></combobox>
+					<combobox id="REQ_AUTORIZACIÓN" sclass="text-left">
+						<comboitem label="S" />
+						<comboitem label="N" />
+					</combobox>
 				</div>
 			</div>
 		</div>
-		
+
 		<div sclass="container">
 			<div sclass="row text-center py-3">
 				<div sclass="col-md-5 text-left">
@@ -173,7 +174,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div sclass="container">
 			<div sclass="row text-center py-3">
 				<div sclass="col-md-5 text-left">
@@ -194,7 +195,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div sclass="container">
 			<div sclass="row text-center py-3">
 				<div sclass="col-md-5 text-left">
@@ -218,14 +219,12 @@
 
 
 		<div sclass=" py-3 text-center">
-			<button sclass="z-botton z-button-cm" type="submit"
-				id="Registrar" label="REGISTRAR">
+			<button sclass="z-botton z-button-cm" type="submit" id="Registrar"
+				label="REGISTRAR">
 			</button>
-			<button sclass="z-botton z-button-cm" id="Editar"
-				label="LIMPIAR FORMULARIO">
+			<button sclass="z-botton z-button-cm" id="Editar" label="LIMPIAR FORMULARIO">
 			</button>
-			<button sclass="z-botton z-button-cm" id="Eliminar"
-				label="CANCELAR">
+			<button sclass="z-botton z-button-cm" id="Eliminar" label="CANCELAR">
 			</button>
 		</div>
 	</div>

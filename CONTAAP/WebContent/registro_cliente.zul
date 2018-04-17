@@ -7,21 +7,20 @@
 
 	<navbar orient="vertical">
 		<navitem label="FORMULARIO DE REGISTRO DE CLIENTES" />
-		
+
 	</navbar>
 
-<div sclass="container-fluid text-center py-3">
-<separator></separator>
-<label value="REGISTRO DE CLIENTES" sclass="h2"></label>
-</div>
+	<div sclass="container-fluid text-center py-3">
+		<separator></separator>
+		<label value="REGISTRO DE CLIENTES" sclass="h2"></label>
+	</div>
 	<div sclass="container-fluid py-3">
 		<div sclass="container">
 			<div sclass="row text-center">
 				<div sclass="col-md-12 text-left">
 					<label value="ID_CLIENTE"></label>
 					<separator></separator>
-					<textbox id="ID_CLIENTE" sclass="form-control"
-						constraint="no empty"  />
+					<textbox id="ID_CLIENTE" sclass="form-control" constraint="no empty" />
 				</div>
 			</div>
 		</div>
@@ -31,8 +30,7 @@
 				<div sclass="col-md-12 text-left">
 					<label value="NOMBRE"></label>
 					<separator></separator>
-					<textbox id="NOMBRE_CL" sclass="form-control"
-						constraint="no empty" />
+					<textbox id="NOMBRE_CL" sclass="form-control" constraint="no empty" />
 				</div>
 			</div>
 		</div>
@@ -57,8 +55,8 @@
 				<div sclass="col-md-5 text-left">
 					<label value="EMAIL"></label>
 					<separator></separator>
-					<textbox id="EMAIL" sclass="form-control"
-						constraint="no empty" placeholder="Ejemplo: usuario1@ejemplo.com" />
+					<textbox id="EMAIL" sclass="form-control" constraint="no empty"
+						placeholder="Ejemplo: usuario1@ejemplo.com" />
 				</div>
 			</div>
 		</div>
@@ -75,14 +73,14 @@
 				</div>
 			</div>
 		</div>
-			
+
 
 
 		<div sclass=" py-3 text-center">
 			<button sclass="z-botton z-button-cm" type="submit" id="Registrar"
 				label="REGISTRAR">
 			</button>
-			<button  sclass="z-botton z-button-cm" id="Editar" label="LIMPIAR FORMULARIO"></button>
+			<button sclass="z-botton z-button-cm" id="Editar" label="LIMPIAR FORMULARIO"></button>
 			<button sclass="z-botton z-button-cm" id="Eliminar" label="CANCELAR"></button>
 		</div>
 	</div>
