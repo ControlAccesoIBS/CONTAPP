@@ -54,7 +54,7 @@
 				<div sclass=" col-md-4 text-left">
 					<label value="ID DEL CLIENTE"></label>
 					<separator></separator>
-					<combobox id="ID_CLIENTE" sclass="text-left" />
+					<combobox id="ID_CLIENTE" constraint="no empty" sclass="text-left" />
 				</div>
 			</div>
 		</div>
@@ -64,7 +64,7 @@
 				<div sclass="col-md-4 text-left">
 					<label value="TEL. OFICINA"></label>
 					<separator></separator>
-					<textbox id="TEL_OFICINA" sclass="text-left" />
+					<textbox id="TEL_OFICINA"  constraint="no empty" sclass="text-left" />
 				</div>
 			</div>
 		</div>
@@ -77,10 +77,10 @@
 					<textbox id="EMAIL_COMPANIA" sclass="form-control"
 						constraint="no empty" placeholder="Ejemplo: usuario1@ejemplo.com" />
 				</div>
-				<div sclass=" col-md-3 text-left">
+				<div sclass=" col-md-4 text-left">
 					<label value="PASSWORD"></label>
 					<separator></separator>
-					<textbox id="PASW_EMAIL_COMPANIA" sclass="form-control"
+					<textbox id="PASW_EMAIL_COMPANIA" sclass="col-md-8 text-left form-control"
 						constraint="no empty" type="password" />
 				</div>
 			</div>
@@ -91,18 +91,18 @@
 				<div sclass="col-md-5 text-left">
 					<label value="CALLE"></label>
 					<separator></separator>
-					<textbox id="CALLE" sclass="form-control" />
+					<textbox id="CALLE" constraint="no empty" sclass="form-control" />
 				</div>
 				<div sclass=" col-md-4 text-left">
 					<label value="N° INT."></label>
 					<separator></separator>
-					<textbox id="NO_INT" sclass="text-left" />
+					<textbox id="NO_INT" constraint="no empty" sclass="text-left" />
 				</div>
 
 				<div sclass=" text-left">
 					<label value="N° EXT."></label>
 					<separator></separator>
-					<textbox id="NO_EXT" sclass="text-left" />
+					<textbox id="NO_EXT" constraint="no empty" sclass="text-left" />
 				</div>
 			</div>
 		</div>
@@ -112,19 +112,19 @@
 				<div sclass="col-md-5 text-left">
 					<label value="COLONIA"></label>
 					<separator></separator>
-					<textbox id="COLONIA" sclass="form-control" />
+					<textbox id="COLONIA" constraint="no empty" sclass="form-control" />
 				</div>
 				<div sclass=" col-md-4 text-left">
 					<label value="MUNICIPIO"></label>
 					<separator></separator>
-					<textbox id="MUNICIPIO" sclass="text-left" />
+					<textbox id="MUNICIPIO" constraint="no empty" sclass="text-left" />
 				</div>
 
 				<div sclass=" text-left">
 
 					<label value="ESTADO"></label>
 					<separator></separator>
-					<textbox id="ESTADO" sclass="text-left" />
+					<textbox id="ESTADO" constraint="no empty" sclass="text-left" />
 				</div>
 			</div>
 		</div>
@@ -134,7 +134,7 @@
 				<div sclass="col-md-5 text-left">
 					<label value="CÓDIGO POSTAL"></label>
 						<separator></separator>
-						<textbox id="COD_POSTAL"  />
+						<textbox id="COD_POSTAL" constraint="no empty" />
 				</div>
 			</div>
 		</div>
@@ -144,18 +144,18 @@
 				<div sclass="col-md-5 text-left">
 					<label value="DESCRIPCIÓN"></label>
 					<separator></separator>
-					<textbox id="DESCRIPCION_COMP" sclass="form-control" />
+					<textbox id="DESCRIPCION_COMP" constraint="no empty" sclass="form-control" />
 				</div>
 				<div sclass=" col-md-4 text-left">
 					<label value="AMBIENTE"></label>
 					<separator></separator>
-					<textbox id="AMBIENTE" sclass="text-left" />
+					<textbox id="AMBIENTE" constraint="no empty" sclass="text-left" />
 				</div>
 
 				<div sclass=" text-left">
 					<label value="AUTORIZACIÓN"></label>
 					<separator></separator>
-					<combobox id="REQ_AUTORIZACIÓN" sclass="text-left" ><comboitem label="S"/><comboitem label="N"/></combobox>
+					<combobox id="REQ_AUTORIZACIÓN" constraint="no empty" sclass="text-left" ><comboitem label="S"/><comboitem label="N"/></combobox>
 				</div>
 			</div>
 		</div>
@@ -165,7 +165,7 @@
 				<div sclass="col-md-5 text-left">
 					<label value="ESTATUS" />
 					<separator></separator>
-					<combobox id="ESTATUS">
+					<combobox id="ESTATUS" constraint="no empty">
 						<comboitem label="A" />
 						<comboitem label="I" />
 					</combobox>
@@ -178,18 +178,18 @@
 				<div sclass="col-md-5 text-left">
 					<label value="ID PROVEEDOR GENERICO"></label>
 					<separator></separator>
-					<combobox id="ID_PROVE_GENERICO" sclass="text-left" />
+					<combobox id="ID_PROVE_GENERICO" constraint="no empty" sclass="text-left" />
 				</div>
 				<div sclass=" col-md-4 text-left">
 					<label value="ID PROVEEDOR VIATICOS"></label>
 					<separator></separator>
-					<combobox id="ID_PROVE_VIATICOS" sclass="text-left" />
+					<combobox id="ID_PROVE_VIATICOS" constraint="no empty" sclass="text-left" />
 				</div>
 
 				<div sclass=" text-left">
 					<label value="ID CONCEPTO DE CONTACTO"></label>
 					<separator></separator>
-					<combobox id="ID_CONCEPTO_CONT" sclass="text-left" />
+					<combobox id="ID_CONCEPTO_CONT" constraint="no empty" sclass="text-left" />
 				</div>
 			</div>
 		</div>
@@ -199,18 +199,18 @@
 				<div sclass="col-md-5 text-left">
 					<label value="NOMBRE DE CONTACTO"></label>
 					<separator></separator>
-					<textbox id="NOMBRE_CONTACTO" sclass="text-left" />
+					<textbox id="NOMBRE_CONTACTO" constraint="no empty" sclass="text-left" />
 				</div>
 				<div sclass=" col-md-4 text-left">
 					<label value="EMAIL DE CONTACTO"></label>
 					<separator></separator>
-					<textbox id="EMAIL_CONTACTO" sclass="text-left" />
+					<textbox id="EMAIL_CONTACTO" constraint="no empty" sclass="col-md-10 text-left form-control" />
 				</div>
 
 				<div sclass=" text-left">
 					<label value="TELÉFONO DE CONTACTO"></label>
 					<separator></separator>
-					<textbox id="TEL_CONTACTO" sclass="text-left" />
+					<textbox id="TEL_CONTACTO" constraint="no empty" sclass="text-left" />
 				</div>
 			</div>
 		</div>

@@ -10,16 +10,15 @@
 		<div sclass="text-center py-3">
 			<label value="APLICACIONES IBS" sclass="h2"></label>
 		</div>
-		<div>
-		<div style="border-radius:20px" sclass="col-md-6 col-md-4 col-xl-3 mb-3 ">
-			<a href="https://iconos8.es/icon/69334/almacenamiento-en-la-nube-privada"></a>
-			<toolbarbutton label="mosaico1"/>
-			<image sclass="img-thumbnail mb-3" src="img/CELULAR.png" width="960" height="600"/>	
-		</div>
-		
-		</div>
-
-
+	<tablelayout style="width:100%">
+		<tablechildren>
+			<panel style="widht:20% background-color:#bfe2ed">
+				<panelchildren>
+				<image src=""/>
+				</panelchildren>
+			</panel>
+		</tablechildren>
+	</tablelayout>
 
 
 	</div>

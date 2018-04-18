@@ -41,7 +41,7 @@
 				<div sclass="col-md-5 text-left">
 					<label value="TEL. CÉLULAR"></label>
 					<separator></separator>
-					<textbox id="TEL_CEL" sclass="text-left" />
+					<textbox id="TEL_CEL" constraint="no empty" sclass=" col-md-6 text-left form-control"  />
 				</div>
 					</div>
 				</div>
@@ -52,8 +52,7 @@
 						<div sclass="col-md-5 text-left">
 							<label value="TEL. OFICINA"></label>
 							<separator></separator>
-							<textbox id="TEL_OFICINA"
-								sclass="text-left" />
+							<textbox id="TEL_OFICINA" constraint="no empty" sclass=" col-md-6 text-left form-control"  />
 						</div>
 					</div>
 				</div>
@@ -63,7 +62,7 @@
 						<div sclass="col-md-5 text-left">
 							<label value="EMAIL"></label>
 							<separator></separator>
-							<textbox id="EMAIL" sclass="form-control"
+							<textbox id="EMAIL" constraint="no empty" sclass="form-control"
 								constraint="no empty"
 								placeholder="Ejemplo: usuario1@ejemplo.com" />
 						</div>
@@ -75,7 +74,7 @@
 						<div sclass="col-md-5 text-left">
 							<label value="ESTATUS" />
 							<separator></separator>
-							<combobox id="ESTATUS">
+							<combobox constraint="no empty" id="ESTATUS">
 								<comboitem label="A" />
 								<comboitem label="I" />
 							</combobox>
