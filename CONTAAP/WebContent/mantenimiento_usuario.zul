@@ -181,7 +181,7 @@
 		<div sclass=" py-3 text-center">
 			<button style="background-color:#005588"  sclass="btn-sm"
 						type="submit"
-				id="Realizar_Cambios" label="REALIZAR CAMBIOS">
+				id="ACTUALIZAR" label="ACTUALIZAR">
 			</button>
 			<button style="background-color:#005588" sclass="btn-sm"
 						type="submit" id="Editar"

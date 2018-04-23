@@ -14,11 +14,11 @@
 				<label value="REGISTRO DE COMPAÑIAS" sclass="h2"></label>
 	</div>
 
-	<div sclass="container-fluid py-3">
+	<div sclass="container col-md-9 py-3">
 		<div sclass="container">
 			<div sclass="row text-center">
 				<div sclass="col-md-12 text-left">
-					<label value="ID DE COMPAÑIA"></label>
+					<label value="COMPAÑIA"></label>
 					<separator></separator>
 					<textbox id="ID_COMPANIA" sclass="form-control"
 						constraint="no empty" />
@@ -52,7 +52,7 @@
 		<div sclass="container">
 			<div sclass="row text-center">
 				<div sclass=" col-md-4 text-left">
-					<label value="ID DEL CLIENTE"></label>
+					<label value="CLIENTE"></label>
 					<separator></separator>
 					<combobox id="ID_CLIENTE" constraint="no empty" sclass="text-left" />
 				</div>
@@ -155,7 +155,7 @@
 				<div sclass=" text-left">
 					<label value="AUTORIZACIÓN"></label>
 					<separator></separator>
-					<combobox id="REQ_AUTORIZACIÓN" constraint="no empty" sclass="text-left" ><comboitem label="S"/><comboitem label="N"/></combobox>
+					<combobox id="REQ_AUTORIZACIÓN" constraint="no empty" sclass="text-left" readonly="true"><comboitem label="S"/><comboitem label="N"/></combobox>
 				</div>
 			</div>
 		</div>
@@ -165,7 +165,7 @@
 				<div sclass="col-md-5 text-left">
 					<label value="ESTATUS" />
 					<separator></separator>
-					<combobox id="ESTATUS" constraint="no empty">
+					<combobox id="ESTATUS" constraint="no empty" readonly="true">
 						<comboitem label="A" />
 						<comboitem label="I" />
 					</combobox>
@@ -178,18 +178,18 @@
 				<div sclass="col-md-5 text-left">
 					<label value="ID PROVEEDOR GENERICO"></label>
 					<separator></separator>
-					<combobox id="ID_PROVE_GENERICO" constraint="no empty" sclass="text-left" />
+					<combobox id="ID_PROVE_GENERICO" constraint="no empty" readonly="true" sclass="text-left" />
 				</div>
 				<div sclass=" col-md-4 text-left">
 					<label value="ID PROVEEDOR VIATICOS"></label>
 					<separator></separator>
-					<combobox id="ID_PROVE_VIATICOS" constraint="no empty" sclass="text-left" />
+					<combobox id="ID_PROVE_VIATICOS" constraint="no empty" readonly="true" sclass="text-left" />
 				</div>
 
 				<div sclass=" text-left">
 					<label value="ID CONCEPTO DE CONTACTO"></label>
 					<separator></separator>
-					<combobox id="ID_CONCEPTO_CONT" constraint="no empty" sclass="text-left" />
+					<combobox id="ID_CONCEPTO_CONT" constraint="no empty" readonly="true" sclass="text-left" />
 				</div>
 			</div>
 		</div>

@@ -9,11 +9,12 @@
 
 	</navbar>
 
-	<div sclass="container-fluid text-center py-3">
+	<div sclass="container text-center py-3">
 		<separator></separator>
 		<label value="REGISTRO DE USUARIOS" sclass="h2"></label>
 	</div>
-	<div sclass="container-fluid py-3">
+	
+	<div sclass="container col-md-9 py-3">
 		<div sclass="container">
 			<div sclass="row text-center">
 				<div sclass="col-md-12 text-left">
@@ -52,7 +53,7 @@
 				<div sclass="col-md-5 text-left">
 					<label value="CÉLULAR"></label>
 					<separator></separator>
-					<textbox id="TEL_CEL" sclass="text-left" />
+					<textbox id="TEL_CEL" constraint="no empty" sclass="text-left" />
 				</div>
 				<div sclass="col-md-3 text-left">
 					<label value="TEL. OFICINA"></label>
@@ -91,7 +92,7 @@
 				<div sclass="col-md-5 text-left">
 					<label value="TIPO DE USUARIO" />
 					<separator></separator>
-					<combobox id="TIPO_USUARIO">
+					<combobox id="TIPO_USUARIO" constraint="no empty" readonly="true">
 						<comboitem label="I" />
 						<comboitem label="E" />
 					</combobox>
@@ -103,20 +104,20 @@
 		<div sclass="container">
 			<div sclass="row text-center py-3">
 				<div sclass="col-md-5 text-left">
-					<label value="ID DEL PERFIL"></label>
+					<label value="PERFIL"></label>
 					<separator></separator>
-					<combobox id="ID_PERFIL" sclass="text-left" />
+					<combobox id="ID_PERFIL" constraint="no empty" sclass="text-left" readonly="true"/>
 				</div>
 				<div sclass=" col-md-4 text-left">
-					<label value="ID DEL CLIENTE"></label>
+					<label value="CLIENTE"></label>
 					<separator></separator>
-					<combobox id="ID_CLIENTE" sclass="text-left" />
+					<combobox id="ID_CLIENTE" constraint="no empty" sclass="text-left" readonly="true"/>
 				</div>
 
 				<div sclass=" text-left">
-					<label value="ID DE LA COMPAÑIA"></label>
+					<label value="COMPAÑIA"></label>
 					<separator></separator>
-					<combobox id="ID_COMPANIA" sclass="text-left" />
+					<combobox id="ID_COMPANIA" constraint="no empty" sclass="text-left" readonly="true"/>
 				</div>
 			</div>
 		</div>
@@ -124,9 +125,9 @@
 		<div sclass="container">
 			<div sclass="row text-center py-3">
 				<div sclass="col-md-5 text-left">
-					<label value="OCUPACIÓN"></label>
+					<label value="TIPO OCUPACIÓN"></label>
 					<separator></separator>
-					<combobox>
+					<combobox readonly="true" constraint="no empty" >
 						<comboitem label="EMPLEADO" />
 						<comboitem label="PROVEEDOR" />
 					</combobox>
@@ -134,7 +135,7 @@
 				<div sclass=" col-md-4 text-left">
 					<label value="ID DE OCUPACIÓN"></label>
 					<separator></separator>
-					<combobox sclass="text-left">
+					<combobox sclass="text-left" constraint="no empty" readonly="true">
 						<comboitem label="E00023" />
 						<comboitem label="P00023" />
 					</combobox>

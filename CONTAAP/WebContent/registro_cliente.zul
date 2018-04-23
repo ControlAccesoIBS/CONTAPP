@@ -13,11 +13,11 @@
 		<separator></separator>
 		<label value="REGISTRO DE CLIENTES" sclass="h2"></label>
 	</div>
-	<div sclass="container-fluid py-3">
+	<div sclass="container col-md-8 py-3">
 		<div sclass="container">
 			<div sclass="row text-center">
 				<div sclass="col-md-12 text-left">
-					<label value="ID_CLIENTE"></label>
+					<label value="CLIENTE"></label>
 					<separator></separator>
 					<textbox id="ID_CLIENTE" sclass="form-control"
 						constraint="no empty" />
@@ -62,7 +62,7 @@
 						<div sclass="col-md-5 text-left">
 							<label value="EMAIL"></label>
 							<separator></separator>
-							<textbox id="EMAIL" constraint="no empty" sclass="form-control"
+							<textbox id="EMAIL" sclass="form-control"
 								constraint="no empty"
 								placeholder="Ejemplo: usuario1@ejemplo.com" />
 						</div>
@@ -74,7 +74,7 @@
 						<div sclass="col-md-5 text-left">
 							<label value="ESTATUS" />
 							<separator></separator>
-							<combobox constraint="no empty" id="ESTATUS">
+							<combobox constraint="no empty" id="ESTATUS" readonly="true">
 								<comboitem label="A" />
 								<comboitem label="I" />
 							</combobox>
