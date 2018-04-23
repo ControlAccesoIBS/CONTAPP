@@ -1,0 +1,72 @@
+<?page title="Login" contentType="text/html;charset=UTF-8"?>
+<?link rel="stylesheet" type="text/css" href="style/boton.css"?>
+<?link rel="stylesheet" type="text/css" href="css/bootstrap.css"?>
+<?script type="text/javascript" src="js/jquery-1.12.1.js"?>
+<zk>
+
+<div sclass="py-3"></div>
+<panel><panelchildren>
+
+	<div style="background-color:#bfe2ed" width="850px" height="600px"  sclass="container text-center py-3">
+
+	<div sclass="text-center py-3">
+		<separator></separator>
+		<label value="Acceso a Usuario" sclass="h2"></label>
+	</div>
+	
+		<div apply="Sesion.ValidarUsuario">
+			<div sclass="container  py-3 text-center col-md-5">
+			<div sclass="text-left">
+				<label value="COMPAÑIA"></label>
+				<separator></separator>
+				<textbox id="ID_COMPANIA" 
+					constraint="no empty" sclass="form-control"/>
+			</div>
+		</div>
+		
+		<div sclass="container py-3 text-center col-md-5">
+			<div sclass="text-left">
+				<label value="USUARIO"></label>
+				<separator></separator>
+				<textbox id="USERNAME" sclass="form-control"
+					constraint="no empty" />
+			</div>
+		</div>
+
+		<div sclass="text-right container col-md-5">
+			<div>
+			<!-- <toolbarbutton label=" ¿Haz olvidado el usuario?" href="http://www.zkoss.org"/> -->
+				<toolbarbutton label=" ¿Haz olvidado el usuario?"/>
+			</div>
+		</div>
+
+		<div sclass="container text-center col-md-5">
+			<div sclass="text-left">
+				<label value="PASSWORD"></label>
+				<separator></separator>
+				<textbox id="PASSWORD_U" sclass="form-control"
+					constraint="no empty" type="password" />
+			</div>
+		</div>
+
+		<div>
+			<div sclass="text-right container col-md-5 py-1">
+				<div>
+				<!-- toolbarbutton label=" ¿Haz olvidado el password?" href="http://www.zkoss.org" -->
+				<toolbarbutton label=" ¿Haz olvidado el password?"/>
+				</div>
+			</div>
+		</div>
+		
+		<div sclass="py-5 text-center container col-md-5">
+			<button sclass="z-button.boton_login z-button-cm"
+				type="submit" id="INICIO_SESION" label="INICIAR SESIÓN">
+				</button>
+			<button sclass="z-button.boton_login z-button-cm"
+				type="submit" id="REGISTRAR" label="REGISTRAR">
+			</button>
+		</div>
+		</div>
+</div>
+</panelchildren></panel>
+</zk>

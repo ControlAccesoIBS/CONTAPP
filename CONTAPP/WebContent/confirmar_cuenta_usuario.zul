@@ -1,0 +1,45 @@
+<?page title="Confirmar cuenta de usuario" contentType="text/html;charset=UTF-8"?>
+<?link rel="stylesheet" type="text/css" href="css/bootstrap.css"?>
+<?script type="text/javascript" src="js/jquery-1.12.1.js"?>
+<zk>
+
+	<div sclass="py-3"></div>
+	<div style="background-color:#bfe2ed" width="850px" height="600px"  sclass="container text-center py-3">
+
+
+			<div sclass="container text-center py-3">
+
+				<div sclass="text-center py-3">
+					<label style="color:black" value="CONFIRMAR CUENTA" sclass="h2"></label>
+				</div>
+
+				<div sclass="container  py-3 text-center col-md-5">
+					<div>
+						<label value="¿Este es su usuario?"></label>
+					</div>
+				</div>
+				<tablelayout
+					sclass="container  py-3 text-center col-md-5" width="200px" columns="3">
+					<tablechildren rowspan="2">
+						<panel title="USUARIO" border="normal"
+							height="200px" >
+							<panelchildren>
+								<vlayout>
+									<label id="USERNAME" value="USERNAME"  />
+								</vlayout>
+							</panelchildren>
+						</panel>
+					</tablechildren>
+				</tablelayout>
+
+				<div sclass="py-5 text-center container col-md-5">
+					<button style="background-color:#005588"
+						sclass="btn-sm" type="submit" id="CONFIRMAR" label="CONFIRMAR">
+					</button>
+					<button style="background-color:#005588" sclass="btn-sm"
+						type="submit" id="CANCELAR" label="CANCELAR">
+					</button>
+				</div>
+			</div>
+	</div>
+</zk>

@@ -1,27 +1,26 @@
-<?page title="Registro de usuario" contentType="text/html;charset=UTF-8"?>
-<?link rel="stylesheet" type="text/css" href="style/boton.css"?>
+<?page title="Mantenimiento de usuario" contentType="text/html;charset=UTF-8"?>
 <?link rel="stylesheet" type="text/css" href="css/bootstrap.css"?>
 <?script type="text/javascript" src="js/jquery-1.12.1.js"?>
-<?init class="Sesion.CrearSesion"?>
+
 <zk>
 
-	<navbar orient="vertical">
-		<navitem label="FORMULARIO DE REGISTRO DE USUARIOS" />
+	<navbar orient="horizontal">
+		<navitem label="MANTENIMIENTO DE USUARIOS" />
 
 	</navbar>
 
 	<div sclass="container-fluid text-center py-3">
 		<separator></separator>
-		<label value="REGISTRO DE USUARIOS" sclass="h2"></label>
+		<label value="MANTENIMIENTO DE USUARIOS" sclass="h2"></label>
 	</div>
-	<div sclass="container-fluid py-3" apply="com.codigoRC.RegistroUser">
+	<div sclass="container-fluid py-3">
 		<div sclass="container">
 			<div sclass="row text-center">
 				<div sclass="col-md-12 text-left">
 					<label value="USUARIO"></label>
 					<separator></separator>
-					<textbox id="USERNAME" sclass="form-control" constraint="no empty"
-						placeholder="AMARES" />
+					<textbox id="USERNAME" sclass="form-control"
+						constraint="no empty" placeholder="AMARES" />
 				</div>
 			</div>
 		</div>
@@ -31,7 +30,8 @@
 				<div sclass="col-md-12 text-left">
 					<label value="RFC"></label>
 					<separator></separator>
-					<textbox id="RFC_USUARIO" sclass="form-control" constraint="no empty" />
+					<textbox id="RFC_USUARIO" sclass="form-control"
+						constraint="no empty" />
 				</div>
 			</div>
 		</div>
@@ -41,8 +41,8 @@
 				<div sclass="col-md-12 text-left">
 					<label value="NOMBRE"></label>
 					<separator></separator>
-					<textbox id="NOMBRE" placeholder="Abraham Mares" sclass="form-control"
-						constraint="no empty" />
+					<textbox id="NOMBRE" placeholder="Abraham Mares"
+						sclass="form-control" constraint="no empty" />
 				</div>
 			</div>
 		</div>
@@ -64,28 +64,31 @@
 
 		<div sclass="container">
 			<div sclass="row text-center">
-				<div sclass="col-md-4 text-left">
+				<div sclass="col-md-5 text-left">
 					<label value="EMAIL"></label>
 					<separator></separator>
 					<textbox id="EMAIL_USER" sclass="form-control"
 						constraint="no empty" placeholder="Ejemplo: usuario1@ejemplo.com" />
 				</div>
-
-				<div sclass="col-md-4 text-left">
+				<div sclass="col-md-3 text-left">
 					<label value="PASSWORD"></label>
 					<separator></separator>
 					<textbox id="PASSWORD_U" sclass="form-control"
 						constraint="no empty" type="password" />
 				</div>
-
-				<div sclass="col-md-4 text-left">
-					<label value="CONFIRMAR PASSWORD"></label>
-					<separator></separator>
-					<textbox id="PASSWORD_U_C" sclass="form-control"
-						constraint="no empty" type="password" />
-				</div>
 			</div>
 		</div>
+		
+		<div sclass="container">
+			<div sclass="row text-center py-3">
+				<div sclass="col-md-5 text-left">
+					<label value="LIMITE DE AUTORIZACIÓN"></label>
+					<separator></separator>
+					<textbox id="LÍMITE_AUTORIZACION" sclass="text-left" />
+				</div>
+					</div>
+				</div>
+		
 
 		<div sclass="container">
 			<div sclass="row text-center py-3">
@@ -95,6 +98,14 @@
 					<combobox id="TIPO_USUARIO">
 						<comboitem label="I" />
 						<comboitem label="E" />
+					</combobox>
+				</div>
+				<div sclass="col-md-5 text-left">
+					<label value="ESTATUS" />
+					<separator></separator>
+					<combobox id="ESTATUS">
+						<comboitem label="A" />
+						<comboitem label="I" />
 					</combobox>
 				</div>
 			</div>
@@ -127,7 +138,7 @@
 				<div sclass="col-md-5 text-left">
 					<label value="OCUPACIÓN"></label>
 					<separator></separator>
-					<combobox id="OCUPACION">
+					<combobox>
 						<comboitem label="EMPLEADO" />
 						<comboitem label="PROVEEDOR" />
 					</combobox>
@@ -135,7 +146,7 @@
 				<div sclass=" col-md-4 text-left">
 					<label value="ID DE OCUPACIÓN"></label>
 					<separator></separator>
-					<combobox id="ID_OCUPACION" sclass="text-left">
+					<combobox sclass="text-left">
 						<comboitem label="E00023" />
 						<comboitem label="P00023" />
 					</combobox>
@@ -143,15 +154,36 @@
 			</div>
 		</div>
 
-
+		<div sclass="container">
+			<div sclass="row text-center py-3">
+				<div sclass="col-md-5 text-left">
+					<label value="ESTATUS DE BLOQUEO" />
+					<separator></separator>
+					<combobox id="ESTATUS_BLOQUEO">
+						<comboitem label="A" />
+						<comboitem label="I" />
+					</combobox>
+				</div>
+				<div sclass="col-md-5 text-left">
+					<label value="FECHA DE BLOQUEO"></label>
+					<separator></separator>
+					<datebox  id="FECHA_BLOQUEO"  constraint="no empty, no today, no future"></datebox>
+				</div>
+			</div>
+		</div>
 
 		<div sclass=" py-3 text-center">
-			<button sclass="z-botton z-button-cm" type="submit" id="Registrar"
-				label="REGISTRAR">
+			<button style="background-color:#005588"  sclass="btn-sm"
+						type="submit"
+				id="Realizar_Cambios" label="REALIZAR CAMBIOS">
 			</button>
-			<button sclass="z-botton z-button-cm" id="Editar" label="LIMPIAR FORMULARIO">
+			<button style="background-color:#005588" sclass="btn-sm"
+						type="submit" id="Editar"
+				label="LIMPIAR FORMULARIO">
 			</button>
-			<button sclass="z-botton z-button-cm" id="Eliminar" label="CANCELAR">
+			<button style="background-color:#005588" sclass="btn-sm"
+						type="submit" id="Eliminar"
+				label="CANCELAR">
 			</button>
 		</div>
 	</div>

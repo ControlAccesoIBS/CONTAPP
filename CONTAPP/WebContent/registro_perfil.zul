@@ -2,6 +2,7 @@
 <?link rel="stylesheet" type="text/css" href="style/boton.css"?>
 <?link rel="stylesheet" type="text/css" href="css/bootstrap.css"?>
 <?script type="text/javascript" src="js/jquery-1.12.1.js"?>
+<?init class="Sesion.CrearSesion"?>
 
 <zk>
 
@@ -42,9 +43,9 @@
 				<div sclass="col-md-5 text-left">
 					<label value="ESTATUS" />
 					<separator></separator>
-					<combobox id="ESTATUS">
+					<combobox id="ESTATUS" readonly="true">
 						<comboitem label="A" />
-						<comboitem label="E" />
+						<comboitem label="I" />
 					</combobox>
 				</div>
 			</div>
@@ -52,22 +53,40 @@
 
 		<div sclass="container">
 			<div sclass="row text-center py-3">
-				<div sclass="col-md-5 text-left">
+			
+				<div sclass="col-md-5 text-left" 				
+				apply="org.zkoss.bind.BindComposer"
+        		viewModel="@id('vm') @init('com.CodigoRP.RegistrarPerfil')">
+        		
 					<label value="ID DEL CLIENTE"></label>
 					<separator></separator>
-					<combobox id="ID_CLIENTE" sclass="text-left" />
+					<combobox id="ID_CLIENTE" sclass="text-left"
+						readonly="true"
+						model="@load(vm.dCliente)" selectedItem="@bind(vm.cliente)">
+                    <template name="model">
+                        <comboitem label="@load(each)" />
+                    </template>
+					</combobox>            
 				</div>
-				<div sclass=" col-md-4 text-left">
+				
+				<div sclass=" col-md-4 text-left"
+					apply="org.zkoss.bind.BindComposer"
+        			viewModel="@id('vm') @init('com.CodigoRP.RegistrarPerfil')">
 					<label value="ID DE COMPAÑIA"></label>
 					<separator></separator>
 					<combobox id="ID_COMPANIA" style="display" sclass="text-left"
-						disabled="false" />
+					readonly="true"
+					model="@load(vm.dCompania)" selectedItem="@bind(vm.comp)">
+                    <template name="model">
+                        <comboitem label="@load(each)" />
+                    </template>
+                    </combobox>
 				</div>
 			</div>
 		</div>
 
-		<div sclass=" py-3 text-center">
-			<button sclass="z-botton z-button-cm" type="submit" id="Registrar"
+		<div sclass=" py-3 text-center" apply="com.CodigoRP.RegistrarPerfil">
+			<button sclass="z-botton z-button-cm" type="submit" id="REGISTRAR"
 				label="REGISTRAR">
 			</button>
 			<button sclass="z-botton z-button-cm" id="Editar" label="LIMPIAR FORMULARIO"></button>

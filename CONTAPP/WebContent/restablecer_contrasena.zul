@@ -20,7 +20,7 @@
 			value="Para restablecer la contraseña, favor de introducir el correo con el que se registro">
 		</label>
 	</div>
-	<window apply="com.codigoRC.ValidarPass">
+	<window apply="com.codigoRC.ValidarPassC">
 		<div sclass="container-fluid py-3">
 
 			<div sclass="container-fluid py-3">
