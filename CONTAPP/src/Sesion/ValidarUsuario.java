@@ -41,7 +41,7 @@ public class ValidarUsuario extends SelectorComposer<Component> {
 		
 		if(ValidaUsuario(usuario,compania) == true){
 			if(ValidarPasswordUser(usuario,compania,password) == true){							
-				Executions.sendRedirect("registro_perfil.zul");
+				Executions.sendRedirect("index.zul");
 			}else{
 				Clients.showNotification("La contraseña es invalida.");
 				Executions.sendRedirect("#");
@@ -74,7 +74,6 @@ public class ValidarUsuario extends SelectorComposer<Component> {
 		List<DatosLogin> r = new QueryUserLogin().ConsultaUser(user, comp);
 		ArrayList<DatosLogin> dl = new ArrayList<DatosLogin>();
 		String passEncrip = DigestUtils.md5Hex(pass);
-		System.out.println(passEncrip);
 		for(DatosLogin datosL : r){
 				String datosbase = datosL.getPassword();
 				if(passEncrip.equals(datosbase)){

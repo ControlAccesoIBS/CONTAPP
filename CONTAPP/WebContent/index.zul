@@ -1,4 +1,36 @@
-<?page title="Auto Generated index.zul"?>
-<?init class="Sesion.CrearSesion"?>
+<?page title="Menu de Aplicaciones" contentType="text/html;charset=UTF-8"?>
+<?link rel="stylesheet" type="text/css" href="style/boton.css"?>
+<?link rel="stylesheet" type="text/css" href="css/bootstrap.css"?>
+<?link rel="stylesheet" type="text/css" href="css/style.css"?>
+<?script type="text/javascript" src="js/jquery-1.12.1.js"?>
+<?script type="text/javascript" src="js/script.js"?>
+<?init class="Sesion.CrearSesion"?>                                
+<div>
+	<navbar orient="vertical">
+		<navitem label="MENU PRINCIPAL" />
 
-<label value="You are using: ${desktop.webApp.version}"/>
+	</navbar>
+
+	<div sclass="container-fluid text-center py-3">
+		<separator></separator>
+		<label value="MENU DE APLICACIONES" sclass="h2"></label>
+	</div>
+	<div sclass="container">
+		<div sclass="row">
+				<div sclass="col-md-3" id="capa">
+				 <div sclass="hovereffect">
+			        <image sclass="img-fluid" src="https://www.camionetica.com/wp-content/uploads/2014/05/The-Days-Colors-Inspired-by-The-Work-of-Chuck-Anderson.jpg"></image>
+			        <div class="overlay">
+			           <label sclass="h2 text-white" value="Hover effect 3"/>
+			           <a sclass="btn btn-outline-light text-white" href="#">link here</a>
+			        </div>
+		   		 </div>
+				</div>			
+		</div>
+		
+		
+		
+
+	</div>
+	
+</div>

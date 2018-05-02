@@ -108,8 +108,8 @@ public class RegistrarPerfil extends SelectorComposer<Component> {
            +",?)";
 			System.out.println(query);
 		try {
-			pst = con.prepareStatement(query);
 			
+			pst = con.prepareStatement(query);
 			pst.setString(1, perfil);
 			pst.setString(2, desc);
 			pst.setString(3, estatus);
@@ -121,7 +121,7 @@ public class RegistrarPerfil extends SelectorComposer<Component> {
 			pst.setString(9, "");
 			pst.setString(10, "1");
 			pst.setString(11, "");
-			pst.setString(12, "");	
+			pst.setString(12, "");				
 			pst.executeUpdate();
 			pst.close();
 		} catch (SQLException e) {
