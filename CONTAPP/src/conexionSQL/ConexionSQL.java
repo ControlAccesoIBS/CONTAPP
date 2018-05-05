@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class ConexionSQL {
 	private static Connection con;
-	public static  Connection getConexion(){
+	public  Connection getConexion(){
 		try{
 			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 			con = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=control_acceso","sa","malitos15");

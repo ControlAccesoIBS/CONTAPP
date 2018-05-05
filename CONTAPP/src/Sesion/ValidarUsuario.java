@@ -14,6 +14,11 @@ import org.zkoss.zul.Button;
 import org.zkoss.zul.Textbox;
 
 public class ValidarUsuario extends SelectorComposer<Component> {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	@Wire
 	Textbox USERNAME;
 	

@@ -89,9 +89,9 @@
 		<div sclass="container">
 			<div sclass="row text-center py-3">
 				<div sclass="col-md-5 text-left">
-					<label value="TIPO DE USUARIO" />
+					<label value="TIPO DE USUARIO"/>
 					<separator></separator>
-					<combobox id="TIPO_USUARIO">
+					<combobox id="TIPO_USUARIO" readonly="true">
 						<comboitem label="I" />
 						<comboitem label="E" />
 					</combobox>
@@ -150,15 +150,26 @@
 				<div sclass="col-md-5 text-left">
 					<label value="OCUPACIÓN"></label>
 					<separator></separator>
-					<combobox id="OCUPACION">
-						<comboitem label="EMPLEADO" />
-						<comboitem label="PROVEEDOR" />
-					</combobox>
+					<radiogroup id="ID_OCUPACION">
+					<radio id="ID_OCUPACION_EMPLEADO" value="EMPLEADO"/><label value="Empleado."></label>
+					<separator></separator>
+					<radio id="ID_OCUPACION_PROVEEDOR" value="PROVEEDOR"/><label value="Proveedor."></label>
+					</radiogroup>
 				</div>
 				<div sclass=" col-md-4 text-left">
 					<label value="ID DE OCUPACIÓN"></label>
 					<separator></separator>
-					<combobox id="ID_OCUPACION" sclass="text-left">
+					<combobox id="ID_PROVEEDOR" sclass="text-left" 
+					readonly="true" disabled="true">
+						<comboitem label="E00023" />
+						<comboitem label="P00023" />
+					</combobox>
+				</div>
+				<div sclass=" col-md-3 text-left">
+					<label value="ID DE OCUPACIÓN"></label>
+					<separator></separator>
+					<combobox id="ID_EMPLEADO" sclass="text-left" 
+					readonly="true" disabled="true">
 						<comboitem label="E00023" />
 						<comboitem label="P00023" />
 					</combobox>
