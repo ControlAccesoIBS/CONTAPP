@@ -1,0 +1,96 @@
+<?page title="ejemplo" contentType="text/html;charset=UTF-8"?>
+<zk>
+<grid>
+        <columns>
+            <column width="40px" />
+            <column hflex="1" label="Name" sort="auto" />
+            <column width="150px" label="Price" sort="auto" align="center"/>
+            <column width="150px" label="Rating" sort="auto" align="center"/>
+        </columns>
+        <rows>
+            <apply template="hotelInfoRow"
+                   name="Kindom Hotel Miami"
+                   price="US $105 per night"
+                   rating="Fabulous 8.2 / 10.0"
+                   detailOpen="true"
+                   img="kingdom_hotel_miami.png"
+                   facilities="Free Parking, Gym, Outdoor Pool"
+                   roomType="Small Double Room"
+                   included="Breakfast"
+                   nearby="1 theme park, 1 museum, 2 other places"
+                   paymentOptions="Credit Card, Cash"
+            />
+            <apply template="hotelInfoRow"
+                   name="Redcliff Rens"
+                   price="US $79 per night"
+                   rating="Fabulous 7.9 / 10.0"
+                   detailOpen="false"
+                   img="redcliff_rens.png"
+                   facilities="24-Hour Front Desk, Bar, Non-Smoking Rooms"
+                   roomType="Twin Room"
+                   included="Breakfast, Internet"
+                   nearby="2 shopping centres, 1 international airport, 5 other places"
+                   paymentOptions="Credit Card, Cash"
+            />
+            <apply template="hotelInfoRow"
+                   name="LJK Warrens Resort"
+                   price="US $104 per night"
+                   rating="Very Good 7.4 / 10.0"
+                   detailOpen="false"
+                   img="ljk_warrens_resort.png"
+                   facilities="Free Parking, Rooftop Terrace, Nightclub"
+                   roomType="Water View Double"
+                   included="Breakfast, Internet"
+                   nearby="1 theme park, 1 convention centre, 2 other places"
+                   paymentOptions="Credit Card, Cash"
+            />
+            <apply template="hotelInfoRow"
+                   name="Kindom Hotel Miami"
+                   price="US $81 per night"
+                   rating="Fabulous 8.1 / 10.0"
+                   detailOpen="false"
+                   img="the_aqua.png"
+                   facilities="Family Rooms, Outdoor Pool, Tennis Court"
+                   roomType="Family Room with Garden View"
+                   included="Breakfast"
+                   nearby="1  theme park, 1 museum, 3 other places"
+                   paymentOptions="Credit Card, Cash"
+            />
+            <template name="hotelInfoRow">
+                <row>
+                    <detail open="${detailOpen}">
+                        <hlayout>
+                            <image sclass="myimg" width="140px" height="90px"
+                                   src="/widgets/grid/master_detail/img/${img}" />
+                            <div sclass="details">
+                                <div>
+                                    <label value="Facilities:" />
+                                    <label value="${facilities}" sclass="heavy" />
+                                </div>
+                                <div>
+                                    <label value="Room Type:" />
+                                    <label value="${roomType}" sclass="heavy" />
+                                </div>
+                                <div>
+                                    <label value="Included:" />
+                                    <label value="${included}" sclass="heavy" />
+                                </div>
+                                <div>
+                                    <label value="Nearby:" />
+                                    <label value="${nearby}" sclass="heavy" />
+                                </div>
+                                <div>
+                                    <label value="PaymentOptions:" />
+                                    <label value="${paymentOptions}" sclass="heavy" />
+                                </div>
+                            </div>
+                        </hlayout>
+                    </detail>
+                    <label value="${name}" />
+                    <label value="${price}" sclass="price" />
+                    <label value="${rating}" sclass="rating" />
+                </row>
+            </template>
+        </rows>
+    </grid>
+</zk>

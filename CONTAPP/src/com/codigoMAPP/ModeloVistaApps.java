@@ -5,6 +5,9 @@ import java.util.List;
 import org.zkoss.bind.annotation.Init;
 import org.zkoss.zk.ui.Component;
 import org.zkoss.zk.ui.select.SelectorComposer;
+import org.zkoss.zk.ui.select.annotation.Wire;
+import org.zkoss.zul.ListModelList;
+import org.zkoss.zul.Listbox;
 
 import com.CodigoRP.DatosCombo;
 
@@ -14,49 +17,34 @@ public class ModeloVistaApps extends SelectorComposer<Component> {
 
 	private List<String> dUrl_PAG_A,dNombreA,dUrl_IMG_A;
 	
+	private List<DatosAplicaciones> datos;
+	
+	public int cantidad;
+	
+	@Wire 
+	private Listbox carListBox;
 	
 	@Init
 	public void GenerarMenuApps(){
-		setNombre_app("Nombre App");
-		url_img="height:30vh; "+
-				"background-image:url(img/launcher.png); "+
-			    "background-position:center; "+
-				"background-repeat:no-repeat; "+
-			    "background-size:cover; ";
-		setUrl_pag("#");
-		dUrl_PAG_A = ObtenerDatosApps.getdUrl_PAG_Apps();
-		dNombreA = ObtenerDatosApps.getdNombreApps();
-		dUrl_IMG_A = ObtenerDatosApps.getdUrl_IMG_Apps();
+		datos = new ConsultaAplicaciones().getConsultaAplicaciones();
+		for(int i = 0;i<datos.size();i++){
+			setNombre_app(datos.get(i).getNombre_app());
+			setUrl_img(datos.get(i).getUrl_img());
+			setUrl_pag(datos.get(i).getUrl_pag());
+			setDescrip_app(datos.get(i).getDescripcion_app());
+		}
+		setCantidad(datos.size());
 	}
 	
-	public List<String> getdApps(){
-		return ObtenerDatosApps.getdApps();
+	public List<DatosAplicaciones> getListaApps(){
+		datos = new ConsultaAplicaciones().getConsultaAplicaciones();
+		return datos;
 	}
-	public List<String> getdDescripA(){
-		return ObtenerDatosApps.getdDescripApps();
-	}
-	public List<String> getdNombreA(){
-		return dNombreA;
-	}
-	public List<String> getdUrl_IMG_A(){
-		return dUrl_IMG_A;
-	}
-	public List<String> getdUrl_PAG_A(){
-		return dUrl_PAG_A;
-	}
-
-	public String getId_app() {	
-		return id_app;
-	}
+	
 
 	public String getNombre_app() {
 		return nombre_app;
 	}
-
-	public String getDescrip_app() {
-		return descrip_app;
-	}
-
 
 	public String getUrl_img() {
 		return url_img;
@@ -66,18 +54,9 @@ public class ModeloVistaApps extends SelectorComposer<Component> {
 		return url_pag;
 	}
 
-	public void setId_app(String id_app) {
-		this.id_app = id_app;
-	}
-
 	public void setNombre_app(String nombre_app) {
 		this.nombre_app = nombre_app;
 	}
-
-	public void setDescrip_app(String descrip_app) {
-		this.descrip_app = descrip_app;
-	}
-
 
 	public void setUrl_img(String url_img) {
 		this.url_img = url_img;
@@ -87,7 +66,51 @@ public class ModeloVistaApps extends SelectorComposer<Component> {
 		this.url_pag = url_pag;
 	}
 
-	
+	public int getCantidad() {
+		return cantidad;
+	}
+
+	public void setCantidad(int cantidad) {
+		this.cantidad = cantidad;
+	}
+
+	public List<DatosAplicaciones> getDatos() {
+		return datos;
+	}
+
+	public void setDatos(List<DatosAplicaciones> datos) {
+		this.datos = datos;
+	}
+
+	public Listbox getCarListBox() {
+		return carListBox;
+	}
+
+	public void setCarListBox(Listbox carListBox) {
+		this.carListBox = carListBox;
+	}
+
+	public String getDescrip_app() {
+		return descrip_app;
+	}
+
+	public void setDescrip_app(String descrip_app) {
+		this.descrip_app = descrip_app;
+	}
+
+	public void setdUrl_PAG_A(List<String> dUrl_PAG_A) {
+		this.dUrl_PAG_A = dUrl_PAG_A;
+	}
+
+	public void setdNombreA(List<String> dNombreA) {
+		this.dNombreA = dNombreA;
+	}
+
+	public void setdUrl_IMG_A(List<String> dUrl_IMG_A) {
+		this.dUrl_IMG_A = dUrl_IMG_A;
+	}
+
+		
 	
 	
 	

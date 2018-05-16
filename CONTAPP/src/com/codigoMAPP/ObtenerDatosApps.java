@@ -14,14 +14,26 @@ public class ObtenerDatosApps {
 		private static List<String> dUrl_PAG_Apps = new ArrayList<String>();
 	
 		static{
-			List<DatosAplicaciones> dA = new ConsultaAplicaciones().getConsultaAplicaciones();
-			
+				List<DatosAplicaciones> dA = new ConsultaAplicaciones().getConsultaAplicaciones();			
 				for(int i = 0; i<dA.size(); i++){
-					dApps.add(dA.get(i).getId_app());
-					dNombreApps.add(dA.get(i).getNombre_app());
-					dDescripApps.add(dA.get(i).getDescripcion_app());
-					dUrl_IMG_Apps.add(dA.get(i).getUrl_img());
-					dUrl_PAG_Apps.add(dA.get(i).getUrl_pag());
+					dApps.add(dA.get(i).getId_app());							
+				}
+				
+				List<DatosAplicaciones> dA1 = new ConsultaAplicaciones().getConsultaAplicaciones();
+				for(int i=0;i<dA1.size();i++){
+					dNombreApps.add(dA1.get(i).getNombre_app());
+				}
+				List<DatosAplicaciones> dA2 = new ConsultaAplicaciones().getConsultaAplicaciones();
+				for(int i=0;i<dA2.size();i++){
+					dDescripApps.add(dA2.get(i).getDescripcion_app());
+				}
+				List<DatosAplicaciones> dA3 = new ConsultaAplicaciones().getConsultaAplicaciones();
+				for(int i=0;i<dA3.size();i++){
+					dUrl_IMG_Apps.add(dA3.get(i).getUrl_img());
+				}
+				List<DatosAplicaciones> dA4 = new ConsultaAplicaciones().getConsultaAplicaciones();
+				for(int i=0;i<dA4.size();i++){
+					dUrl_PAG_Apps.add(dA4.get(i).getUrl_pag());
 				}
 		}
 

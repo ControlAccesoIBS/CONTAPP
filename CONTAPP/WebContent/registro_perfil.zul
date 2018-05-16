@@ -1,96 +1,128 @@
 <?page title="Registro de Perfiles" contentType="text/html;charset=UTF-8"?>
 <?link rel="stylesheet" type="text/css" href="style/boton.css"?>
+<?link rel="stylesheet" type="text/css" href="css/font-awesome.css"?>
 <?link rel="stylesheet" type="text/css" href="css/bootstrap.css"?>
 <?script type="text/javascript" src="js/jquery-1.12.1.js"?>
 <?init class="Sesion.CrearSesion"?>
-
 <zk>
-
-	<navbar orient="vertical">
-		<navitem label="FORMULARIO DE REGISTRO DE PERFILES" />
-
-	</navbar>
-
-	<div sclass="container-fluid text-center py-3">
-		<separator></separator>
-		<label value="REGISTRO DE PERFILES" sclass="h2"></label>
-	</div>
-	<div sclass="container-fluid py-3">
-		<div sclass="container">
-			<div sclass="row text-center">
-				<div sclass="col-md-12 text-left">
-					<label value="PERFIL"></label>
-					<separator></separator>
-					<textbox id="ID_PERFIL" sclass="form-control" constraint="no empty"
-						placeholder="Administrador" />
-				</div>
-			</div>
-		</div>
-
-		<div sclass="container">
-			<div sclass="row text-center">
-				<div sclass="col-md-12  py-3 text-left">
-					<label value="DESCRIPCIÓN"></label>
-					<separator></separator>
-					<textbox id="DESCRIPCION_PERFIL" sclass="form-control"
-						constraint="no empty" />
-				</div>
-			</div>
-		</div>
-
-		<div sclass="container">
-			<div sclass="row text-center">
-				<div sclass="col-md-5 text-left">
-					<label value="ESTATUS" />
-					<separator></separator>
-					<combobox id="ESTATUS" readonly="true">
-						<comboitem label="A" />
-						<comboitem label="I" />
-					</combobox>
-				</div>
-			</div>
-		</div>
-
-		<div sclass="container">
-			<div sclass="row text-center py-3">
-			
-				<div sclass="col-md-5 text-left" 				
-				apply="org.zkoss.bind.BindComposer"
-        		viewModel="@id('vm') @init('com.CodigoRP.RegistrarPerfil')">
-        		
-					<label value="ID DEL CLIENTE"></label>
-					<separator></separator>
-					<combobox id="ID_CLIENTE" sclass="text-left"
-						readonly="true"
-						model="@load(vm.dCliente)" selectedItem="@bind(vm.cliente)">
-                    <template name="model">
-                        <comboitem label="@load(each)" />
-                    </template>
-					</combobox>            
-				</div>
+	
+	<div sclass="container-fluid bg-light fixed-top" style="height:11vh; box-shadow: 0px 1px 0px #000;">
+		<div sclass="row text-left container d-flex flex-column justify-content-center h-100 align-items-left">
+			<div xmlns:w="client" apply="com.tree.Menu">
+				<a style="background:none;boder:none;"  
+				w:onClick="jq('$items').animate({width: 'toggle'});"
+				id="BotonMenu">
+				<image sclass="rounded float-left"  src="img/icono_menu.png" style="height:8vh;"></image>
+				</a>
 				
-				<div sclass=" col-md-4 text-left"
-					apply="org.zkoss.bind.BindComposer"
-        			viewModel="@id('vm') @init('com.CodigoRP.RegistrarPerfil')">
-					<label value="ID DE COMPAÑIA"></label>
-					<separator></separator>
-					<combobox id="ID_COMPANIA" style="display" sclass="text-left"
-					readonly="true"
-					model="@load(vm.dCompania)" selectedItem="@bind(vm.comp)">
-                    <template name="model">
-                        <comboitem label="@load(each)" />
-                    </template>
-                    </combobox>
+			</div>
+			<div sclass="text-left" style="padding-left:13%;">
+				<label sclass="h3" value="CONTROL DE ACCESO"></label>
+			</div>
+			
+		</div>
+		<!-- espacio para el menu -->
+		<div sclass="col-md-3" id="items" viewModel="@id('vm') @init('com.tree.Menu')" visible="false">
+			<div id="uploadVideo" >
+				<tree model="@load(vm.model)" sclass="lead" style="padding:none;"></tree>
+			</div>
+		</div>
+		<!-- fin del menu -->		
+	</div>
+	
+	<div sclass="container-fluid py-5">	
+		<!-- Contenido -->
+		<div>
+			<div sclass="container-fluid text-center py-3">
+				<separator></separator>
+				<label value="REGISTRO DE PERFILES" sclass="h2"></label>
+			</div>
+			<div sclass="container-fluid py-3">
+				<div sclass="container">
+					<div sclass="row text-center">
+						<div sclass="col-md-12 text-left">
+							<label value="PERFIL"></label>
+							<separator></separator>
+							<textbox id="ID_PERFIL"
+								sclass="form-control" constraint="no empty"
+								placeholder="Administrador" />
+						</div>
+					</div>
+				</div>
+
+				<div sclass="container">
+					<div sclass="row text-center">
+						<div sclass="col-md-12  py-3 text-left">
+							<label value="DESCRIPCIÓN"></label>
+							<separator></separator>
+							<textbox id="DESCRIPCION_PERFIL"
+								sclass="form-control" constraint="no empty" />
+						</div>
+					</div>
+				</div>
+
+				<div sclass="container">
+					<div sclass="row text-center">
+						<div sclass="col-md-5 text-left">
+							<label value="ESTATUS" />
+							<separator></separator>
+							<combobox id="ESTATUS" readonly="true">
+								<comboitem label="A" />
+								<comboitem label="I" />
+							</combobox>
+						</div>
+					</div>
+				</div>
+
+				<div sclass="container">
+					<div sclass="row text-center py-3">
+
+						<div sclass="col-md-5 text-left"
+							apply="org.zkoss.bind.BindComposer"
+							viewModel="@id('vm') @init('com.CodigoRP.RegistrarPerfil')">
+
+							<label value="ID DEL CLIENTE"></label>
+							<separator></separator>
+							<combobox id="ID_CLIENTE" sclass="text-left"
+								readonly="true" model="@load(vm.dCliente)"
+								selectedItem="@bind(vm.cliente)">
+								<template name="model">
+									<comboitem label="@load(each)" />
+								</template>
+							</combobox>
+						</div>
+
+						<div sclass=" col-md-4 text-left"
+							apply="org.zkoss.bind.BindComposer"
+							viewModel="@id('vm') @init('com.CodigoRP.RegistrarPerfil')">
+							<label value="ID DE COMPAÑIA"></label>
+							<separator></separator>
+							<combobox id="ID_COMPANIA" style="display"
+								sclass="text-left" readonly="true" model="@load(vm.dCompania)"
+								selectedItem="@bind(vm.comp)">
+								<template name="model">
+									<comboitem label="@load(each)" />
+								</template>
+							</combobox>
+						</div>
+					</div>
+				</div>
+
+				<div sclass=" py-3 text-center"
+					apply="com.CodigoRP.RegistrarPerfil">
+					<button sclass="z-botton z-button-cm" type="submit"
+						id="REGISTRAR" label="REGISTRAR">
+					</button>
+					<button sclass="z-botton z-button-cm" id="Editar"
+						label="LIMPIAR FORMULARIO">
+					</button>
+					<button sclass="z-botton z-button-cm" id="Eliminar"
+						label="CANCELAR">
+					</button>
 				</div>
 			</div>
 		</div>
+		<!-- Fin Contenido -->
 
-		<div sclass=" py-3 text-center" apply="com.CodigoRP.RegistrarPerfil">
-			<button sclass="z-botton z-button-cm" type="submit" id="REGISTRAR"
-				label="REGISTRAR">
-			</button>
-			<button sclass="z-botton z-button-cm" id="Editar" label="LIMPIAR FORMULARIO"></button>
-			<button sclass="z-botton z-button-cm" id="Eliminar" label="CANCELAR"></button>
-		</div>
 	</div>
 </zk>

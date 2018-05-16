@@ -122,8 +122,8 @@ public class RegistroUser extends SelectorComposer<Component> {
 	public void Registrar() {
 
 		Connection cnn = con.getConexion();
-		String user = USERNAME.getValue().toString();
-		String rfc = RFC_USUARIO.getValue().toString();
+		String user = USERNAME.getValue().toString().toUpperCase();
+		String rfc = RFC_USUARIO.getValue().toString().toUpperCase();
 		String email = EMAIL_USER.getValue().toString();
 		String cliente = ID_CLIENTE.getValue().toString();
 		String comp = ID_COMPANIA.getValue().toString();
@@ -204,9 +204,9 @@ public class RegistroUser extends SelectorComposer<Component> {
 			String ocupacion = ID_OCUPACION.getSelectedItem().getValue().toString();
 			ocupacion.replace(" ", "");
 			if (ocupacion.equals("EMPLEADO")) {
-				String user = USERNAME.getValue().toString();
-				String rfc = RFC_USUARIO.getValue().toString().toUpperCase();
-				String nombre = NOMBRE.getValue().toString().toUpperCase();
+				String user = USERNAME.getValue().toString().toUpperCase();
+				String rfc = RFC_USUARIO.getValue().toString().toUpperCase().toUpperCase();
+				String nombre = NOMBRE.getValue().toString().toUpperCase().toUpperCase();
 				String cel = TEL_CEL.getValue().toString();
 				String tel_oficina = TEL_OFICINA.getValue().toString();
 				String email = EMAIL_USER.getValue().toString();
@@ -271,7 +271,7 @@ public class RegistroUser extends SelectorComposer<Component> {
 				}
 
 			} else if (ocupacion.equals("PROVEEDOR")) {
-				String user = USERNAME.getValue().toString();
+				String user = USERNAME.getValue().toString().toUpperCase();
 				String rfc = RFC_USUARIO.getValue().toString().toUpperCase();
 				String nombre = NOMBRE.getValue().toString().toUpperCase();
 				String cel = TEL_CEL.getValue().toString();

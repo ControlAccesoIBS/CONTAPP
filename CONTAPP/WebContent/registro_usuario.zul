@@ -110,7 +110,7 @@
 					<combobox id="ID_PERFIL" sclass="text-left" 
 						readonly="true"
 						model="@load(vm.dCPerfil)" selectedItem="@bind(vm.perfil)">
-                    <template name="model">
+                    <template name="model">                   	
                         <comboitem label="@load(each)" />
                     </template>
 					</combobox> 

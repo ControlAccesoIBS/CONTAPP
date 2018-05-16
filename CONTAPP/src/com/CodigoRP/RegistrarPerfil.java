@@ -15,13 +15,13 @@ import org.apache.commons.codec.digest.DigestUtils;
 import org.zkoss.bind.annotation.Init;
 import org.zkoss.zk.ui.Component;
 import org.zkoss.zk.ui.Sessions;
+import org.zkoss.zk.ui.event.Events;
 import org.zkoss.zk.ui.select.SelectorComposer;
 import org.zkoss.zk.ui.select.annotation.Listen;
 import org.zkoss.zk.ui.select.annotation.Wire;
 import org.zkoss.zk.ui.util.Clients;
 import org.zkoss.zul.Button;
 import org.zkoss.zul.Combobox;
-import org.zkoss.zul.ListModel;
 import org.zkoss.zul.Textbox;
 
 import Sesion.CrearSesion;
@@ -40,6 +40,8 @@ public class RegistrarPerfil extends SelectorComposer<Component> {
 	@Wire
 	Button REGISTRAR;
 	
+	
+	
 	private Connection cnn;
 	private PreparedStatement pst;
 	private ResultSet rst;
@@ -56,6 +58,7 @@ public class RegistrarPerfil extends SelectorComposer<Component> {
 	 public void init() {
 		setCliente("Seleccione el cliente");
 		setComp("Seleccione la compañia");
+
     }
 	
 	@Listen("onClick=#REGISTRAR")

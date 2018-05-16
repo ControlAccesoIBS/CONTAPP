@@ -6,121 +6,78 @@
 <?script type="text/javascript" src="js/script.js"?>
 <?init class="Sesion.CrearSesion"?>                                
 <div>
-	<navbar orient="vertical">
-		<navitem label="MENU PRINCIPAL" />
-
-	</navbar>
-
-	<div sclass="container-fluid text-center py-3">
-		<separator></separator>
-		<label value="MENU DE APLICACIONES" sclass="h2"></label>
-	</div>
-	<div sclass="container">
-		<div sclass="row">
-
-				<div sclass="col-md-4" id="capa">
-
-					<div sclass="hovereffect"
-						style="height:30vh;
-				 		background-image: url(img/launcher.png);
-						background-position:center;
-						background-repeat:no-repeat;
-						background-size:cover;">
-
-						<div
-							sclass="overlay text-white text-center container d-flex flex-column justify-content-center h-100 align-items-center">
-							<label sclass="h2"
-								style="text-shadow: 2px 2px 2px #000;" value="Hover effect 3" />
-							<separator></separator>
-							<a sclass="btn btn-outline-light text-white"
-								href="#">
-								link here
-							</a>
-						</div>
-
-					</div>
-				</div>
+	<div sclass="container-fluid bg-light fixed-top" style="height:11vh; box-shadow: 0px 1px 0px #000;">
+		<div sclass="row text-left container d-flex flex-column justify-content-center h-100 align-items-left">
+			<div xmlns:w="client" apply="com.tree.Menu">
+				<a style="background:none;boder:none;"  
+				w:onClick="jq('$items').animate({width: 'toggle'});"
+				id="BotonMenu">
+				<image sclass="rounded float-left"  src="img/icono_menu.png" style="height:8vh;"></image>
+				</a>
 				
-				<div sclass="col-md-4" >
-
-					<div sclass="hovereffect"
-						style="height:30vh;
-				 		background-image: url(img/launcher.png);
-						background-position:center;
-						background-repeat:no-repeat;
-						background-size:cover;">
-
-						<div
-							sclass="overlay text-white text-center container d-flex flex-column justify-content-center h-100 align-items-center">
-							<label sclass="h2"
-								style="text-shadow: 2px 2px 2px #000;" value="Hover effect 3" />
-							<separator></separator>
-							<a sclass="btn btn-outline-light text-white"
-								href="#">
-								link here
-							</a>
-						</div>
-
-					</div>
-				</div>
-				
-				<div sclass="col-md-4">
-
-					<div sclass="hovereffect"
-						style="height:30vh;
-				 		background-image: url(img/launcher.png);
-						background-position:center;
-						background-repeat:no-repeat;
-						background-size:cover;">
-
-						<div
-							sclass="overlay text-white text-center container d-flex flex-column justify-content-center h-100 align-items-center">
-							<label sclass="h2"
-								style="text-shadow: 2px 2px 2px #000;" value="Hover effect 3" />
-							<separator></separator>
-							<a sclass="btn btn-outline-light text-white"
-								href="#">
-								link here
-							</a>
-						</div>
-
-					</div>
-				</div>
+			</div>
+			<div sclass="text-left" style="padding-left:13%;">
+				<label sclass="h3" value="CONTROL DE ACCESO"></label>
+			</div>
+			
 		</div>
-		
-		<!-- Prueba uno de los elementos -->
-		
-		<div sclass="row py-4" 
-			apply="org.zkoss.bind.BindComposer"
-        	viewModel="@id('vm') @init('com.codigoMAPP.ModeloVistaApps')">
-        	<zscript>
-        	String [] grades = new String[] {"Best", "Better", "Good"};
-        	</zscript>
-        	
-			<zk forEach="${grades}">
-			  	
-			<div sclass="col-md-4"
-        		model="@load(vm.dUrl_IMG_A,vm.dNombreA,vm.dUrl_PAG_A)" >
-        			<div sclass="hovereffect"
-						style="@load(vm.url_img)">
-						<div
-							sclass="overlay text-white text-center container d-flex flex-column justify-content-center h-100 align-items-center">						
-								<label sclass="h2"
-								style="text-shadow: 2px 2px 2px #000;" value="@bind(vm.nombre_app)" />
-							<separator></separator>
-							<a sclass="btn btn-outline-light text-white"
-								href="@bind(vm.url_pag)">
-								link here
-							</a>						
-						</div>
-					</div>
-				</div>
-			</zk>	
+		<!-- espacio para el menu -->
+		<div sclass="col-md-3" id="items" viewModel="@id('vm') @init('com.tree.Menu')" visible="false">
+			<div id="uploadVideo" >
+				<tree model="@load(vm.model)" sclass="lead" style="padding:none;"></tree>
+			</div>
 		</div>
-		
-		
-		
-
+		<!-- fin del menu -->		
 	</div>
+			<div sclass="py-4">
+				<div sclass="container-fluid text-center py-5">
+				<separator></separator>
+				<label value="MENU DE APLICACIONES" sclass="h2"></label>
+				</div>
+			</div>
+			
+	<div sclass="container py-2">
+		<div apply="org.zkoss.bind.BindComposer"
+			viewModel="@id('vm') @init('com.codigoMAPP.ModeloVistaApps')"
+			>
+			<grid model="@load(vm.listaApps)">
+				<columns>
+					<column/>
+					<column/>
+				</columns>				
+					<rows>
+						<template name="model">
+							<row>
+							<div sclass="hovereffect">
+								<image
+									style="height:30vh;
+										   background-position:center;
+										   background-repeat:no-repeat;
+										   background-size:cover;
+										   filter:alpha(opacity=90);
+										   -moz-opacity: 0.9;
+										   opacity: 0.9;"
+									src="@load(each.url_img)" sclass="img-fluid">
+								</image>
+								<div
+									sclass="overlay text-white text-center 
+									container d-flex flex-column justify-content-center 
+									h-100 align-items-center">
+									<label sclass="h2"
+										style="text-shadow: 2px 2px 2px #000;" 
+										value="@load(each.nombre_app)" />
+								</div>
+							</div>
+							<div>
+								<label sclass="lead" value="@load(each.descripcion_app)"></label>
+								<separator></separator>
+								<a href="@load(each.url_pag)" sclass="btn btn-outline-info btn-lg" label="Ir al sitio"></a>
+							</div>
+							</row>		
+						</template>									
+					</rows>				
+			</grid>
+		</div>
 	
+</div>
 </div>
