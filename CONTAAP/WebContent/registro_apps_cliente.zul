@@ -1,7 +1,7 @@
 <?page title="Registro de aplicaciones por cliente" contentType="text/html;charset=UTF-8"?>
 <?link rel="stylesheet" type="text/css" href="css/bootstrap.css"?>
 <?script type="text/javascript" src="js/jquery-1.12.1.js"?>
-
+<?init class="Sesion.CrearSesion"?>
 <zk>
 
 	<navbar orient="vertical">
@@ -18,17 +18,27 @@
 		
 		<div sclass="container text-center col-md-5">
 			<div sclass="row text-center py-3">
-				<div sclass="text-left col-md-7" >
+				<div sclass="text-left col-md-7" apply="org.zkoss.bind.BindComposer"
+				 viewModel="@id('vm') @init('com.CodigoRAppCli.Registro_App_Cli')" > 
 					<label value="CLIENTE"></label>
 					<separator></separator>
-					<combobox id="ID_CLIENTE" constraint="no empty" readonly="true">
+					<combobox id="ID_CLIENTE" constraint="no empty" readonly="true" 
+					model="@load(vm.dCliente)" selectedItem="@bind(vm.cliente)" >
+					<template name="model">
+					<comboitem label="@load(each)"/>
+					</template>
 					</combobox>
 				</div>
 				
-				<div sclass="text-left ">
+				<div sclass="text-left" apply="org.zkoss.bind.BindComposer"
+				viewModel="@id('vm') @init('com.CodigoRAppCli.Registro_App_Cli')">
 					<label value="COMPAÑIA"></label>
 					<separator></separator>
-					<combobox id="ID_COMPANIA" constraint="no empty" sclass="text-right" readonly="true">
+					<combobox id="ID_COMPANIA" constraint="no empty" sclass="text-right" readonly="true" 
+					model="@load(vm.dCompania)" selectedItem="@bind(vm.comp)">
+					<template name="model">
+					<comboitem label="@load(each)"/>
+					</template>
 					</combobox>
 				</div>
 			</div>
@@ -36,10 +46,15 @@
 		
 		<div sclass="container text-center col-md-5">
 			<div sclass="row text-center py-3">
-				<div sclass="text-left col-md-7" >
+				<div sclass="text-left col-md-7" apply="org.zkoss.bind.BindComposer"
+				viewModel="@id('vm') @init('com.CodigoRAppCli.Registro_App_Cli')" >
 					<label value="APLICACIÓN"></label>
 					<separator></separator>
-					<combobox id="ID_APP" constraint="no empty" readonly="true">
+					<combobox id="ID_APP" constraint="no empty" readonly="true"
+					model="@load(vm.dApplicacion)" selectedItem="@bind(vm.app)">
+					<template name="model">
+					<comboitem label="@load(each)"/>
+					</template>
 					</combobox>
 				</div>
 			</div>
@@ -68,10 +83,9 @@
 		</div>
 		
 	
-		<div sclass=" py-4 text-center ">
+		<div sclass=" py-4 text-center" apply="com.CodigoRAppCli.Registro_App_Cli">
 			<button style="background-color: #005588" sclass="btn-sm"
-						type="submit" id="Registrar"
-				label="REGISTRAR">
+						type="submit" id="REGISTRAR" label="REGISTRAR">
 			</button>
 			<button style="background-color: #005588" sclass="btn-sm"
 						type="submit" id="Editar" label="LIMPIAR FORMULARIO"></button>

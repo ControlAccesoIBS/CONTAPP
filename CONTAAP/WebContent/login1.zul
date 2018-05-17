@@ -6,7 +6,7 @@
 <div sclass="py-3"></div>
 <panel><panelchildren>
 
-	<div style="background-color:#d8f9f9" width="850px" height="600px"  sclass="container text-center py-3">
+	<div apply="Sesion.ValidarSesion"  style="background-color:#d8f9f9" width="850px" height="600px"  sclass="container text-center py-3">
 
 	<div sclass="text-center py-3">
 		<separator></separator>
@@ -42,7 +42,7 @@
 			<div sclass="text-left">
 				<label value="PASSWORD"></label>
 				<separator></separator>
-				<textbox id="PASSWORD_U" sclass="form-control"
+				<textbox id="PASSWORD_U" type="password"  sclass="form-control"
 					constraint="no empty" />
 			</div>
 		</div>

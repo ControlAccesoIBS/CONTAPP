@@ -1,6 +1,7 @@
 <?page title="Registro de usuario" contentType="text/html;charset=UTF-8"?>
 <?link rel="stylesheet" type="text/css" href="css/bootstrap.css"?>
 <?script type="text/javascript" src="js/jquery-1.12.1.js"?>
+<?init class="Sesion.CrearSesion"?>
 
 <zk>
 
@@ -14,14 +15,14 @@
 		<label value="REGISTRO DE USUARIOS" sclass="h2"></label>
 	</div>
 	
-	<div sclass="container col-md-9 py-3">
+	<div sclass="container col-md-9 py-3" apply="com.CodigoRU.RegistroUser">
 		<div sclass="container">
 			<div sclass="row text-center">
 				<div sclass="col-md-12 text-left">
 					<label value="USUARIO"></label>
 					<separator></separator>
 					<textbox id="USERNAME" sclass="form-control"
-						constraint="no empty" placeholder="AMARES" />
+						constraint="no empty" placeholder="AMARES" maxlength="15"/>
 				</div>
 			</div>
 		</div>
@@ -32,7 +33,7 @@
 					<label value="RFC"></label>
 					<separator></separator>
 					<textbox id="RFC_USUARIO" sclass="form-control"
-						constraint="no empty" />
+						constraint="no empty" maxlength="13"/>
 				</div>
 			</div>
 		</div>
@@ -43,7 +44,7 @@
 					<label value="NOMBRE"></label>
 					<separator></separator>
 					<textbox id="NOMBRE" placeholder="Abraham Mares"
-						sclass="form-control" constraint="no empty" />
+						sclass="form-control" constraint="no empty" maxlength="100"/>
 				</div>
 			</div>
 		</div>
@@ -53,12 +54,12 @@
 				<div sclass="col-md-5 text-left">
 					<label value="CÉLULAR"></label>
 					<separator></separator>
-					<textbox id="TEL_CEL" constraint="no empty" sclass="text-left" />
+					<textbox id="TEL_CEL" constraint="no empty" sclass="text-left" maxlength="15"/>
 				</div>
 				<div sclass="col-md-3 text-left">
 					<label value="TEL. OFICINA"></label>
 					<separator></separator>
-					<textbox id="TEL_OFICINA"  sclass="col-md-11 text-left form-control" />
+					<textbox id="TEL_OFICINA"  sclass="col-md-11 text-left form-control" maxlength="15"/>
 				</div>
 			</div>
 		</div>
@@ -69,20 +70,20 @@
 					<label value="EMAIL"></label>
 					<separator></separator>
 					<textbox id="EMAIL_USER" sclass="form-control"
-						constraint="no empty" placeholder="Ejemplo: usuario1@ejemplo.com" />
+						constraint="no empty" constraint="no empty,/.+@.+\.[a-z]+/" placeholder="Ejemplo: usuario1@ejemplo.com" maxlength="100"/>
 				</div>
 				
 				<div sclass="col-md-4 text-left">
 					<label value="PASSWORD"></label>
 					<separator></separator>
 					<textbox id="PASSWORD_U" sclass="col-md-8 text-left form-control"
-						constraint="no empty" type="password" />
+						constraint="no empty" type="password" maxlength="15"/>
 				</div>
 				<div sclass="col-md-3 text-left">
 					<label value="CONFIRMAR PASSWORD"></label>
 					<separator></separator>
-					<textbox id="CONFIRMAR_PASSWORD" sclass="form-control"
-						constraint="no empty" type="password" />
+					<textbox id="PASSWORD_U_C" sclass="form-control"
+						constraint="no empty" type="password" maxlength="15"/>
 				</div>
 			</div>
 		</div>
@@ -103,22 +104,39 @@
 
 		<div sclass="container">
 			<div sclass="row text-center py-3">
-				<div sclass="col-md-5 text-left">
+				<div sclass="col-md-5 text-left" apply="org.zkoss.bind.BindComposer" viewModel="@id('vm')@init('com.CodigoRU.RegistroUser')">
 					<label value="PERFIL"></label>
 					<separator></separator>
-					<combobox id="ID_PERFIL" constraint="no empty" sclass="text-left" readonly="true"/>
+					<combobox id="ID_PERFIL" constraint="no empty" sclass="text-left" readonly="true"
+					model="@load(vm.dCPerfil)" selectedItem="@bind(vm.perfil)">
+					<template name="model">
+					<comboitem label="@load(each)"/>
+					</template>
+					</combobox>
 				</div>
-				<div sclass=" col-md-4 text-left">
+				<div sclass=" col-md-4 text-left"
+				apply="org.zkoss.bind.BindComposer"
+        		viewModel="@id('vm') @init('com.CodigoRU.RegistroUser')">
 					<label value="CLIENTE"></label>
 					<separator></separator>
-					<combobox id="ID_CLIENTE" constraint="no empty" sclass="text-left" readonly="true"/>
+					<combobox id="ID_CLIENTE" constraint="no empty" sclass="text-left" readonly="true"
+						model="@load(vm.dCliente)" selectedItem="@bind(vm.cliente)">
+                    <template name="model">
+                        <comboitem label="@load(each)" />
+                    </template>
+					</combobox>
 				</div>
 
-				<div sclass=" text-left">
+				<div sclass=" text-left" apply="org.zkoss.bind.BindComposer"
+        		viewModel="@id('vm') @init('com.CodigoRU.RegistroUser')">
 					<label value="COMPAÑIA"></label>
 					<separator></separator>
-					<combobox id="ID_COMPANIA" constraint="no empty" sclass="text-left" readonly="true"/>
-				</div>
+					<combobox id="ID_COMPANIA" constraint="no empty" sclass="text-left" readonly="true" model="@load(vm.dComp)" selectedItem="@bind(vm.comp)">
+                    <template name="model">
+                        <comboitem label="@load(each)" />
+                    </template>
+					</combobox> 
+					</div>
 			</div>
 		</div>
 
@@ -127,7 +145,7 @@
 				<div sclass="col-md-5 text-left">
 					<label value="TIPO OCUPACIÓN"></label>
 					<separator></separator>
-					<combobox readonly="true" constraint="no empty" >
+					<combobox id="OCUPACION" readonly="true" constraint="no empty" >
 						<comboitem label="EMPLEADO" />
 						<comboitem label="PROVEEDOR" />
 					</combobox>
@@ -135,7 +153,7 @@
 				<div sclass=" col-md-4 text-left">
 					<label value="ID DE OCUPACIÓN"></label>
 					<separator></separator>
-					<combobox sclass="text-left" constraint="no empty" readonly="true">
+					<combobox id="ID_OCUPACION" sclass="text-left" constraint="no empty" readonly="true">
 						<comboitem label="E00023" />
 						<comboitem label="P00023" />
 					</combobox>
@@ -148,14 +166,14 @@
 		<div sclass=" py-3 text-center">
 			<button style="background-color:#005588"  sclass="btn-sm"
 						type="submit"
-				id="Registrar" label="REGISTRAR">
+				id="REGISTRAR" label="REGISTRAR"  apply="com.CodigoRU.RegistroUser">
 			</button>
 			<button style="background-color:#005588" sclass="btn-sm"
-						type="submit" id="Editar"
-				label="LIMPIAR FORMULARIO">
+						type="submit" id="LIMPIAR"
+				label="LIMPIAR FORMULARIO" apply="com.CodigoRU.RegistroUser">
 			</button>
 			<button style="background-color:#005588" sclass="btn-sm"
-						type="submit" id="Eliminar"
+						type="submit" id="CANCELAR"
 				label="CANCELAR">
 			</button>
 		</div>

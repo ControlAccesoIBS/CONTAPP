@@ -1,7 +1,7 @@
 <?page title="Registro de cliente" contentType="text/html;charset=UTF-8"?>
 <?link rel="stylesheet" type="text/css" href="css/bootstrap.css"?>
 <?script type="text/javascript" src="js/jquery-1.12.1.js"?>
-
+<?init class="Sesion.CrearSesion"?>
 <zk>
 
 	<navbar orient="vertical">
@@ -20,7 +20,7 @@
 					<label value="CLIENTE"></label>
 					<separator></separator>
 					<textbox id="ID_CLIENTE" sclass="form-control"
-						constraint="no empty" />
+						constraint="no empty" maxlength="10"/>
 				</div>
 			</div>
 		</div>
@@ -30,8 +30,8 @@
 				<div sclass="col-md-12 text-left">
 					<label value="NOMBRE"></label>
 					<separator></separator>
-					<textbox id="NOMBRE_CL" sclass="form-control"
-						constraint="no empty" />
+					<textbox id="NOMBRE_CLI" sclass="form-control"
+						constraint="no empty" maxlength="100"/>
 				</div>
 			</div>
 		</div>
@@ -41,7 +41,7 @@
 				<div sclass="col-md-5 text-left">
 					<label value="TEL. CÉLULAR"></label>
 					<separator></separator>
-					<textbox id="TEL_CEL" constraint="no empty" sclass=" col-md-6 text-left form-control"  />
+					<textbox id="TEL_CEL" constraint="no empty" sclass=" col-md-6 text-left form-control"  maxlength="15"/>
 				</div>
 					</div>
 				</div>
@@ -52,7 +52,7 @@
 						<div sclass="col-md-5 text-left">
 							<label value="TEL. OFICINA"></label>
 							<separator></separator>
-							<textbox id="TEL_OFICINA" constraint="no empty" sclass=" col-md-6 text-left form-control"  />
+							<textbox id="TEL_OFICINA" constraint="no empty" sclass=" col-md-6 text-left form-control"  maxlength="15"/>
 						</div>
 					</div>
 				</div>
@@ -63,8 +63,8 @@
 							<label value="EMAIL"></label>
 							<separator></separator>
 							<textbox id="EMAIL" sclass="form-control"
-								constraint="no empty"
-								placeholder="Ejemplo: usuario1@ejemplo.com" />
+								constraint="no empty,/.+@.+\.[a-z]+/"
+								placeholder="Ejemplo: usuario1@ejemplo.com" maxlength="100"/>
 						</div>
 					</div>
 				</div>
@@ -84,9 +84,9 @@
 
 
 
-				<div sclass=" py-3 text-center">
+				<div sclass=" py-3 text-center" apply="com.CodigoCLI.RegistrarCliente">
 					<button style="background-color: #005588"
-						sclass="btn-sm" type="submit" id="Registrar" label="REGISTRAR">
+						sclass="btn-sm" type="submit" id="REGISTRAR" label="REGISTRAR">
 					</button>
 					<button style="background-color: #005588"
 						sclass="btn-sm" type="submit" id="Editar"
