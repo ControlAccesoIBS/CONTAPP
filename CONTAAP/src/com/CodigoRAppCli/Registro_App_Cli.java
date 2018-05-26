@@ -55,21 +55,33 @@ public class Registro_App_Cli extends SelectorComposer<Component> {
 	
 	@Listen("onClick=#REGISTRAR")
 	public void RegistrarAplicacionCliente(){
-		String id_cliente = ID_CLIENTE.getValue().toString();
+		String id_cliente = ID_CLIENTE.getValue().toString().replace(" ", "");
 		String id_compania = ID_COMPANIA.getValue().toString();
 		String id_app = ID_APP.getValue().toString();
 		String estatus = ESTATUS.getValue().toString();
 		String req_autorizacion = REQ_AUTORIZACION.getValue().toString();
+		cnn = con.getConexion();
 		
-		if(ValidarAplicacionCliente(id_cliente, id_compania, id_app)==false){
-			
-				EjecutarComando(cnn); 
-			}else{
-				Clients.showNotification("No se pudo registrar, la relación ya existe.",
-				Clients.NOTIFICATION_TYPE_WARNING,null,"middle_center", 2000);
-			}	
+		
+		if (ValidarAplicacionCliente2(id_cliente, id_compania) == true) {
+
+			if (ValidarAplicacionCliente(id_cliente, id_compania, id_app) == false) {
+				EjecutarComando(cnn);
+
+			} else {
+				Clients.showNotification("La aplicación ya esta vinculada al cliente",
+						Clients.NOTIFICATION_TYPE_WARNING, null,
+						"middle_center", 2000);
+
+			}
+		} else {
+			Clients.showNotification(
+					"No existe la relacion entre Cliente y Compañia.",
+					Clients.NOTIFICATION_TYPE_WARNING, null, "middle_center",
+					2000);
 		}
-	
+	}
+
 	private void EjecutarComando(Connection con) {
 		// TODO Auto-generated method stub
 		String id_cliente = ID_CLIENTE.getValue().toString().toUpperCase();
@@ -85,18 +97,18 @@ public class Registro_App_Cli extends SelectorComposer<Component> {
 			String query = "INSERT INTO REL_CIA_APP"
 					+ "(ID_CLIENTE,"
 					+ "ID_COMPANIA,"
-					+ "ID_APP, "
+					+ "ID_APP,"
 					+ "ESTATUS,"
 					+ "REQ_AUTORIZACION,"
 					+ "FECHA_ALTA,"
 					+ "USERNAME_ALTA,"
 					+ "ESTATUS_BLOQUEO,"
 					+ "FECHA_BLOQUEO,"
-					+ "FECHA_MODF, "
+					+ "FECHA_MODF,"
 					+ "USERNAME_MODF)"
 					
 					+"VALUES"
-					+"(?"
+					+"(? "
 					 +",?"
 					 +",?"
 					 +",?" 
@@ -108,11 +120,11 @@ public class Registro_App_Cli extends SelectorComposer<Component> {
 					 +",?"
 					 +",?)";
 			pst = con.prepareStatement(query);
-			pst.setString(1, id_cliente);
-			pst.setString(2, id_compania);
-			pst.setString(3, id_app);
-			pst.setString(4, estatus);
-			pst.setString(5, req_autorizacion);
+			pst.setString(1, id_cliente.replace(" ",""));
+			pst.setString(2, id_compania.replace(" ", ""));
+			pst.setString(3, id_app.replace(" ", ""));
+			pst.setString(4, estatus.replace(" ", ""));
+			pst.setString(5, req_autorizacion.replace(" ",""));
 			pst.setTimestamp(6, fecha_alta);
 			pst.setString(7, userAlta.replace(" ", ""));
 			pst.setString(8, "");
@@ -127,32 +139,37 @@ public class Registro_App_Cli extends SelectorComposer<Component> {
 					Clients.NOTIFICATION_TYPE_INFO, null, "middle_center",
 					2000);
 		}catch (SQLException e){
-			Clients.showNotification("No la relación ya existe.",
+			Clients.showNotification("No se puede hacer el registro, la relación ya existe.",
 					Clients.NOTIFICATION_TYPE_WARNING, null,
 					"middle_center", 2000);
 			System.out.println(e.getMessage().toString());	
 		}
 	}
-	
+	private boolean ValidarAplicacionCliente2(String id_cliente2, String id_compania2) {
+		boolean validado2=false;
+		List<DatosCompania> r2 = new ConsultaCli_App().ConsultaCompC(id_compania2.replace(" ", ""), id_cliente2.replace(" ", ""));		
+			if(r2.isEmpty()){				
+				return validado2;
+			}else {
+				validado2 = true;
+				return validado2;
+			}
+			
+	}
 	
 	private boolean ValidarAplicacionCliente(String id_cliente,
 			String id_compania, String id_app) {
 				boolean validado=false;
-				List<DatosCliente> r=new ConsultaCli_App().ConsultaCliente();
-				for(DatosCliente datosC : r){
-					if(r == null){
-						validado = false;
+				List<DatosCompania> r=new ConsultaCli_App().ConsultaCompCc(id_compania.replace(" ", ""), id_cliente.replace(" ", ""), id_app.replace(" ", ""));
+				
+					if(r.isEmpty()){
 						return validado;
-					}else if(r!=null){
+					}else{
+						validado = true;
 						return validado;
 					}
-				}
-		return validado;
-		// TODO Auto-generated method stub	
 	}
-		
-	
-	
+
 	public String getCliente() {
 		return cliente;
 	}

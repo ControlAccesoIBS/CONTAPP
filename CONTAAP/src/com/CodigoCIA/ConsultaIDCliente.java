@@ -44,6 +44,7 @@ public class ConsultaIDCliente {
 	                );
 	        return datos;
 	    }
+		
 		public List<DatosCliente> ConsultaCliente(){
 			try {
 				Connection cnn = con.getConexion();

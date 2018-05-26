@@ -82,8 +82,6 @@
 					</div>
 				</div>
 
-
-
 				<div sclass=" py-3 text-center" apply="com.CodigoCLI.RegistrarCliente">
 					<button style="background-color: #005588"
 						sclass="btn-sm" type="submit" id="REGISTRAR" label="REGISTRAR">

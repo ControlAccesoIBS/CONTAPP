@@ -71,8 +71,10 @@ public class RegistroUser extends SelectorComposer<Component> {
 		NOMBRE.setValue(" ");
 		TEL_CEL.setValue(" ");
 		TEL_OFICINA.setValue(" ");
+		PASSWORD_U.setValue(" ");
+		PASSWORD_U_C.setValue(" ");
 		EMAIL_USER.setValue(" ");
-		TIPO_USUARIO.setSelectedIndex(0);
+		TIPO_USUARIO.setSelectedItem(null);
 		ID_PERFIL.setSelectedIndex(0);
 		ID_CLIENTE.setSelectedIndex(0);
 		ID_COMPANIA.setSelectedIndex(0);
